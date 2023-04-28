@@ -1,0 +1,10 @@
+name: "DATA ANALYTICS"
+title: "DATA ANALYTICS"
+description: |
+  DATA ANALYTICS
+output_dir: "_docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+output: distill::distill_article

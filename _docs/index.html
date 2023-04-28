@@ -1,0 +1,3101 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { color: #00769e; background-color: #f1f3f5; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #00769e; } /* Normal */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #657422; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #00769e; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #00769e; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #00769e; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+
+  <!--radix_placeholder_meta_tags-->
+  <title>DATA ANALYTICS: Happiness Economics - Group: Romania</title>
+
+
+
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2023-02-10"/>
+  <meta property="article:created" itemprop="dateCreated" content="2023-02-10"/>
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="DATA ANALYTICS: Happiness Economics - Group: Romania"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="DATA ANALYTICS"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="DATA ANALYTICS: Happiness Economics - Group: Romania"/>
+
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","date","site"]}},"value":[{"type":"character","attributes":{},"value":["Happiness Economics - Group: Romania"]},{"type":"character","attributes":{},"value":["2023-02-10"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  <!--radix_placeholder_navigation_in_header-->
+  <meta name="distill:offset" content=""/>
+
+  <script type="application/javascript">
+
+    window.headroom_prevent_pin = false;
+
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+
+      // initialize headroom for banner
+      var header = $('header').get(0);
+      var headerHeight = header.offsetHeight;
+      var headroom = new Headroom(header, {
+        tolerance: 5,
+        onPin : function() {
+          if (window.headroom_prevent_pin) {
+            window.headroom_prevent_pin = false;
+            headroom.unpin();
+          }
+        }
+      });
+      headroom.init();
+      if(window.location.hash)
+        headroom.unpin();
+      $(header).addClass('headroom--transition');
+
+      // offset scroll location for banner on hash change
+      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+      window.addEventListener("hashchange", function(event) {
+        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+      });
+
+      // responsive menu
+      $('.distill-site-header').each(function(i, val) {
+        var topnav = $(this);
+        var toggle = topnav.find('.nav-toggle');
+        toggle.on('click', function() {
+          topnav.toggleClass('responsive');
+        });
+      });
+
+      // nav dropdowns
+      $('.nav-dropbtn').click(function(e) {
+        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+        $(this).parent().siblings('.nav-dropdown')
+           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $("body").click(function(e){
+        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $(".nav-dropdown").click(function(e){
+        e.stopPropagation();
+      });
+    });
+  </script>
+
+  <style type="text/css">
+
+  /* Theme (user-documented overrideables for nav appearance) */
+
+  .distill-site-nav {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #0F2E3D;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .distill-site-nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .distill-site-nav a:hover {
+    color: white;
+  }
+
+  @media print {
+    .distill-site-nav {
+      display: none;
+    }
+  }
+
+  .distill-site-header {
+
+  }
+
+  .distill-site-footer {
+
+  }
+
+
+  /* Site Header */
+
+  .distill-site-header {
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+
+  .distill-site-header .nav-left {
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header .nav-left {
+      margin-left: 0;
+    }
+  }
+
+
+  .distill-site-header .nav-right {
+    float: right;
+    margin-right: 8px;
+  }
+
+  .distill-site-header a,
+  .distill-site-header .title {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 10px 14px 10px;
+  }
+
+  .distill-site-header .title {
+    font-size: 18px;
+    min-width: 150px;
+  }
+
+  .distill-site-header .logo {
+    padding: 0;
+  }
+
+  .distill-site-header .logo img {
+    display: none;
+    max-height: 20px;
+    width: auto;
+    margin-bottom: -4px;
+  }
+
+  .distill-site-header .nav-image img {
+    max-height: 18px;
+    width: auto;
+    display: inline-block;
+    margin-bottom: -3px;
+  }
+
+
+
+  @media screen and (min-width: 1000px) {
+    .distill-site-header .logo img {
+      display: inline-block;
+    }
+    .distill-site-header .nav-left {
+      margin-left: 20px;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 20px;
+    }
+    .distill-site-header .title {
+      padding-left: 12px;
+    }
+  }
+
+
+  .distill-site-header .nav-toggle {
+    display: none;
+  }
+
+  .nav-dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav-dropdown .nav-dropbtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 16px 10px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    margin-top: 1px;
+    z-index: 2;
+  }
+
+  .nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    margin-top: 2px;
+    white-space: nowrap;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .nav-dropdown-content hr {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-dropdown-active {
+    display: block;
+  }
+
+  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+    color: black;
+    padding: 6px 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .nav-dropdown-content .nav-dropdown-header {
+    display: block;
+    padding: 5px 24px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #999999;
+    white-space: nowrap;
+  }
+
+  .nav-dropdown:hover .nav-dropbtn {
+    color: white;
+  }
+
+  .nav-dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .nav-right .nav-dropdown-content {
+    margin-left: -45%;
+    right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+    .distill-site-header a.nav-toggle {
+      float: right;
+      display: block;
+    }
+    .distill-site-header .title {
+      margin-left: 0;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 0;
+    }
+    .distill-site-header {
+      overflow: hidden;
+    }
+    .nav-right .nav-dropdown-content {
+      margin-left: 0;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header.responsive {position: relative; min-height: 500px; }
+    .distill-site-header.responsive a.nav-toggle {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .distill-site-header.responsive a,
+    .distill-site-header.responsive .nav-dropdown {
+      display: block;
+      text-align: left;
+    }
+    .distill-site-header.responsive .nav-left,
+    .distill-site-header.responsive .nav-right {
+      width: 100%;
+    }
+    .distill-site-header.responsive .nav-dropdown {float: none;}
+    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  /* Site Footer */
+
+  .distill-site-footer {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 3;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  /* Headroom */
+
+  d-title {
+    padding-top: 6rem;
+  }
+
+  @media print {
+    d-title {
+      padding-top: 4rem;
+    }
+  }
+
+  .headroom {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .headroom--transition {
+    transition: all .4s ease-in-out;
+  }
+
+  .headroom--unpinned {
+    top: -100px;
+  }
+
+  .headroom--pinned {
+    top: 0;
+  }
+
+  /* adjust viewport for navbar height */
+  /* helps vertically center bootstrap (non-distill) content */
+  .min-vh-100 {
+    min-height: calc(100vh - 100px) !important;
+  }
+
+  </style>
+
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+  <script type="application/javascript">
+
+  function getMeta(metaName) {
+    var metas = document.getElementsByTagName('meta');
+    for (let i = 0; i < metas.length; i++) {
+      if (metas[i].getAttribute('name') === metaName) {
+        return metas[i].getAttribute('content');
+      }
+    }
+    return '';
+  }
+
+  function offsetURL(url) {
+    var offset = getMeta('distill:offset');
+    return offset ? offset + '/' + url : url;
+  }
+
+  function createFuseIndex() {
+
+    // create fuse index
+    var options = {
+      keys: [
+        { name: 'title', weight: 20 },
+        { name: 'categories', weight: 15 },
+        { name: 'description', weight: 10 },
+        { name: 'contents', weight: 5 },
+      ],
+      ignoreLocation: true,
+      threshold: 0
+    };
+    var fuse = new window.Fuse([], options);
+
+    // fetch the main search.json
+    return fetch(offsetURL('search.json'))
+      .then(function(response) {
+        if (response.status == 200) {
+          return response.json().then(function(json) {
+            // index main articles
+            json.articles.forEach(function(article) {
+              fuse.add(article);
+            });
+            // download collections and index their articles
+            return Promise.all(json.collections.map(function(collection) {
+              return fetch(offsetURL(collection)).then(function(response) {
+                if (response.status === 200) {
+                  return response.json().then(function(articles) {
+                    articles.forEach(function(article) {
+                      fuse.add(article);
+                    });
+                  })
+                } else {
+                  return Promise.reject(
+                    new Error('Unexpected status from search index request: ' +
+                              response.status)
+                  );
+                }
+              });
+            })).then(function() {
+              return fuse;
+            });
+          });
+
+        } else {
+          return Promise.reject(
+            new Error('Unexpected status from search index request: ' +
+                        response.status)
+          );
+        }
+      });
+  }
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // get search element (bail if we don't have one)
+    var searchEl = window.document.getElementById('distill-search');
+    if (!searchEl)
+      return;
+
+    createFuseIndex()
+      .then(function(fuse) {
+
+        // make search box visible
+        searchEl.classList.remove('hidden');
+
+        // initialize autocomplete
+        var options = {
+          autoselect: true,
+          hint: false,
+          minLength: 2,
+        };
+        window.autocomplete(searchEl, options, [{
+          source: function(query, callback) {
+            const searchOptions = {
+              isCaseSensitive: false,
+              shouldSort: true,
+              minMatchCharLength: 2,
+              limit: 10,
+            };
+            var results = fuse.search(query, searchOptions);
+            callback(results
+              .map(function(result) { return result.item; })
+            );
+          },
+          templates: {
+            suggestion: function(suggestion) {
+              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+                : '';
+              var html = `
+                <div class="search-item">
+                  <h3>${suggestion.title}</h3>
+                  <div class="search-item-description">
+                    ${suggestion.description || ''}
+                  </div>
+                  <div class="search-item-preview">
+                    ${img}
+                  </div>
+                </div>
+              `;
+              return html;
+            }
+          }
+        }]).on('autocomplete:selected', function(event, suggestion) {
+          window.location.href = offsetURL(suggestion.path);
+        });
+        // remove inline display style on autocompleter (we want to
+        // manage responsive display via css)
+        $('.algolia-autocomplete').css("display", "");
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+  });
+
+  </script>
+
+  <style type="text/css">
+
+  .nav-search {
+    font-size: x-small;
+  }
+
+  /* Algolioa Autocomplete */
+
+  .algolia-autocomplete {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: sub;
+    background-color: white;
+    color: black;
+    padding: 6px;
+    padding-top: 8px;
+    padding-bottom: 0;
+    border-radius: 6px;
+    border: 1px #0F2E3D solid;
+    width: 180px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .distill-site-nav .algolia-autocomplete {
+      display: none;
+      visibility: hidden;
+    }
+    .distill-site-nav.responsive .algolia-autocomplete {
+      display: inline-block;
+      visibility: visible;
+    }
+    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+      margin-left: 0;
+      width: 400px;
+      max-height: 400px;
+    }
+  }
+
+  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+    width: 90%;
+    outline: none;
+    border: none;
+  }
+
+  .algolia-autocomplete .aa-hint {
+    color: #999;
+  }
+  .algolia-autocomplete .aa-dropdown-menu {
+    width: 550px;
+    max-height: 70vh;
+    overflow-x: visible;
+    overflow-y: scroll;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: -150px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #999;
+    border-top: none;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+    cursor: pointer;
+    padding: 5px 4px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+    border-bottom: none;
+    margin-bottom: 2px;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+    overflow: hidden;
+    font-size: 0.8em;
+    line-height: 1.4em;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+    font-size: 1rem;
+    margin-block-start: 0;
+    margin-block-end: 5px;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+    display: inline-block;
+    overflow: hidden;
+    height: 2.8em;
+    width: 80%;
+    margin-right: 4%;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+    display: inline-block;
+    width: 15%;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+    height: 3em;
+    width: auto;
+    display: none;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+    display: initial;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+    background-color: #eee;
+  }
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  </style>
+
+
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+    font-size: 100%;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: auto;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme
+    $('code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+        }).join("\n");
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <!--/radix_placeholder_distill-->
+  <script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Happiness Economics - Group: Romania","authors":[],"publishedDate":"2023-02-10T00:00:00.000+01:00"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="index.html" class="title">DATA ANALYTICS</a>
+</div>
+<div class="nav-right">
+<a href="index.html">Home</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Happiness Economics - Group: Romania</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+
+</div>
+
+
+<div class="d-article">
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h1 id="download-data">Download data</h1>
+<blockquote>
+<p>Download the data for the country you choose. You also find the official variable description file in the corresponding folder.
+Done.
+___
+# First overview of data
+Get acquainted with the data (rename and/or recode variables). The main variables with which we are going to work are measures of subjective well-being (SWB), namely general happiness and life satisfaction. Are these two variables comparable measures of SWB? How do these variables correlate with personal characteristics like income, health, age, marital status, etc.? Find suitable ways to show some possible (not necessarily causal) relationships.</p>
+</blockquote>
+<h2 id="a170-satisfaction-in-life">A170 satisfaction in life</h2>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   6.000   8.000   7.528   9.000  10.000 </code></pre>
+</div>
+<p>The summary command allows us to have a rough overview of the variable A170 - satisfaction in life. The variable is scaled from 1 to 10, with 10 being the highest level of satisfaction. Since one can rank the level of satisfaction (e.g: a level of 8 being higher ranked than a level 2), but the distance between the levels is subjective (e.g: a person on a level 8 is not necessarily twice as happy as a person on the level 4) Life satisfaction can be considered an ordinarily scaled variable.
+The summary command shows, that everybody has replied to to questions (no NA’s). Another conclusion which can be drawn from the summary command is the average level of satisfaction. With a median level of 8, and a mean of 7.5, the Romanian people are generally not extremely satisfied, but also not unsatisfied with their life as a whole. In addition to that, it can be seen, that the half of the asked population ranks themselves between a 6 and a 9.</p>
+The following plot allows a look at the distribution of satisfaction
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-2-1.png" width="100%" /></p>
+</div>
+<p>The barplot on the distribution of satisfaction in life adds additional information to the summary command. As one can see, most people can identify with the highest level “satisfied” . It remains unclear, why there is such a rapid drop one level below. Furthermore it can be seen, that the lower 25% are much more distributed (from 2 to 5), whereas “Satisfied” contains all the upper 25% of the counts.</p>
+<h2 id="a008-feeling-of-happiness">A008 Feeling of happiness</h2>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   3.000   3.000   2.962   3.000   4.000 </code></pre>
+</div>
+<p>Also the variable happy only contains interpretable values. Neither has nobody not answered, nor has the question being skipped, or other other problems occurred. The variable is scaled from 1 to 4. 1 indicates “very happy”, 4 indicates “not at all happy”. Identical to satisfaction, the feeling of happiness counts as a originally scaled variable.</p>
+The following barplot allows a closer look at the distribution of happiness within # the questioned people in Romania
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-4-1.png" width="100%" /></p>
+</div>
+<p>From the barplot one can conclude, that most people (approx. 56%) are “quite happy”, one fifth of the questioned population are “very happy” and roughly the same amount of people are “not very happy”, or “not at all happy”</p>
+<h2 id="univariate-and-multivariate-analysis-of-swb-factors">Univariate and multivariate analysis of SWB Factors</h2>
+<p>In the following section we are going to provide a comparison of the two key variables with other variables.</p>
+<h3 id="income">Income</h3>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   3.000   4.000   3.867   5.000  10.000 </code></pre>
+</div>
+<p>The variable income was evaluated by showing the questioned households a range of income groups within their country, of which the participants had to select one. The income then got scaled from 1 (the 1st decile) and 10 (the highest decile).</p>
+The following two plots allow an insight in the income distribution of Romania
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-6-1.png" width="100%" /></p>
+</div>
+<p>It can be seen, that the distribution is right skewed. This indicates, that the vast majority belongs to a lower income group. The boxplot shows, that 50% of the people lay in between the 3rd and the 5th decile.</p>
+The following mosaic plots shall provide an overview of the two main variables and the scaled income.
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-7-1.png" width="100%" /></p>
+</div>
+<p>The two mosaic plots allow a bivariate exploratory analysis among the variables income and happiness, as well as income and satisfaction. The comparison between income and satisfaction in life shows, that the group with the lowest income is the group has more “very happy” people, than the following 3 decile’s. However by grouping “quite happy” and “very happy” into one category, as suggested by the second decile, it can then be seen that the lower three deciles make up for the lowest share. When analyzing the top 30% of income earners, we can see that almost everybody is at least “quite happy”. Also worth noting is that the top decile group of earners has less “very happy” people as decile group 7,8 &amp; 9.</p>
+<p>For a better overview, we grouped the levels of satisfaction into 1 = “Not satisfied at all, 2-5 =”not very satisfied”, 6-9 = “quiet satisfied” and 10 = very satisfied.Comparing the satisfaction and the income, the group with the lowest income, again has one of the highest rates of satisfaction. Tough it should also be mentioned, that they also share one of the highest rates of Dissatisfaction. Once again it shows, that a higher income rules out the chance of being “not satisfied at all”. At the same time, the top 10% income group accounts for the lowest amount of very satisfied people.</p>
+<h3 id="health">Health</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-8-1.png" width="100%" /></p>
+</div>
+<p>The average citizen seems to be in rather good health condition. Most of the answers group around the “good” health answer. The second most frequent answer is the “fair” health response. A very small percentage of respondents report being of “poor” or “very poor” health.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-9-1.png" width="100%" /></p>
+</div>
+<p>These mosaic plots show a connection between health of an individual and the satisfaction with life and overall happiness. Looking at happiness in life first, what stands out is, that those with poor and very poor health are to a large extent not very happy. This also translates to overall life satisfaction. Those with poor health are to a large extent not very satisfied. The opposite to this observation also holds true. Those with good and very good health are to a very large extent either very happy or quite happy. Respectively, those with good and very good health are also quite satisfied and very satisfied.</p>
+<h3 id="age">Age</h3>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  19.00   34.00   50.00   49.54   65.00   82.00 </code></pre>
+</div>
+<p>The summary command tells us the mean and the median age. Bothe are around 50. With the mean and the median age laying close together, one can say, that the distribution is rater equal. Since the age scaling end at the age of 82, one can not say, how old the oldest person in the dataframe is. The youngest however is at the age of 19.</p>
+In order to get a brief overview of the age distribution, a population pyramid can help.
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-11-1.png" width="100%" /></p>
+</div>
+<p>The visualisation of age distribution separated by sex supports the insight, that there is no significant difference or trend in age distribution.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-12-1.png" width="100%" /></p>
+</div>
+<p>The boxplots show the distribution of age within the different levels of happiness and satisfaction. On the left graph it can be seen, that the median age increases, the less satisfied a person is. In the left graph it can be seen, that people who are “not happy at all” tend to be much older by median, than people who are very happy. For a less biased picture, we decided to split the level of happiness into male and female. It can be seen, that this does not make so big of a difference. However, a switch in the median age is observable, the less happy a person gets. The right boxplot shows that people with a satisfaction-level of 1 and 2 are almost solely over the age of 50. We can also note, that with satisfaction-levels of 3 and 4, the age is also quite high except for the lower 25 percentile in age and the lower outliers. Quite striking are the variances in the satisfaction-levels from 5 to 10, which span the whole age spectrum, although in general we can say that the higher the satisfaction-level the lower the median age</p>
+<h3 id="marital-status">Marital status</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-13-1.png" width="100%" /></p>
+</div>
+<p>Since it is not possible, to put the marital status in some kind of hierarchy, it can be considered a nominal scaled variable. The graph shows the distribution of people regarding their legal marital status. It can be seen, that the wide majority (60%) is married. The second and third highest population is formed by people who are single or have never been married (19%), and people who are widowed (15%).</p>
+The following mosaic plots are an attempt of a causal link between the marriage status, happiness and life satisfaction
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-14-1.png" width="100%" /></p>
+</div>
+<p>It can be seen, that the widowed people are generally the ones who are rather not, or not happy at all. The single and married people are generally the biggest peopulation of people who are “very happy”.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-15-1.png" width="100%" /></p>
+</div>
+<p>The distribution of “very satisfied” people is quiet similar to the one seen in the previous plot. The same counts for the “not very” or “not satisfied at all”, with widowed people making up the largest population.</p>
+<h3 id="additional-variables">Additional variables</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-16-1.png" width="100%" /></p>
+</div>
+<p>These additional variables also allow a little bit of insight into the data. Starting off with charitable causes we can see that those who mentioned being a member of a charitable organisation reported to be quite happy or very happy more often.</p>
+<p>Being a member of a labor union also seems to have a certain connection to happiness as union members more often reported to be quite or very happy as opposed to non-members.</p>
+<p>Interestingly, being a member of a religious organisation doesn’t seem to increase happiness for all participants. It can be observed that those who are religious more often reported to be not very happy but at the same time religious respondents more often reported to be very happy. One way of interpreting this would be to assume that being religious could have a diverging effect on people and either increase or decrease their happiness according to some other external variable.</p>
+<p>Looking at the variable of being a member of a self-help group, the graphs don’t diverge as much as for other variables. Those who are members of a self-help group have a little more frequently reported to be quite happy than those who are not, but the effect is very small.</p>
+<p>Finally, being a member of an activity. This seems to be connected to the effect of happiness as those who have reported to be member of any sort of activity rarely mentioned to be not very happy or not at all happy. Over 90% of respondents who mentioned to be member of an activity reported to be either very or at least quite happy.</p>
+<h1 id="social-capital">Social Capital</h1>
+<blockquote>
+<p>The literature shows that Social Capital is an important factor for increasing the level of SWB. For the trust dimension of social capital you may use the variable asking whether people can generally be trusted or not, for the weak ties dimension you could use the sum of the variables asking whether one is a member of …
+For the following section, we shall have a look at how the subjective well-being (SWB), namely general happiness and life satisfaction, are linked to Social Capital
+In order to take a closer look at the SWB, we shall take the term of the Social Capital into account. The literature shows that Social Capital is an important factor for increasing the level of SWB. But first of all, what is Social Capital?
+Social capital can be seen as “a positive product of human interaction” (investopedia.com). While it can not be owned by somebody, it is the result of connections between individuals within social networks. Social capital can be seen as a base pillar for the effective functioning of social groups. The absence of Social capital can mislead a group of people to not achieve a common goal or purpose.
+Despite its undeniable value for any group of individuals, there is no consensus on how social capital can be measured directly. This leads to the conclusion, that social capital can only be expressed through other indicators. The European Value Study (EVS) includes several indicators which can help to determine a countries Social Capital.
+In the following, we are going to consider trust as a key dimension for social capital. The EVS sees the trust variable as an indication whether most people can be trusted or not. in particular, the people participating in the survey get asked the following question: Generally speaking, would you say that most people can be trusted or that you can’t be too careful in dealing with people?
+The answer is then separated into two possible answers (1) “Most people can be trusted” and (2) “Can’t be too careful”. In the following diagram, we are going to provide an overview of the responses of the qualitative variable.</p>
+</blockquote>
+The following table depicts the distribution of the two levels of trust in Romania
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-17-1.png" width="100%" /></p>
+</div>
+<p>As we can see from the pie chart and the table, people in Romania are generally rather careful. The vast majority (approx. 85%) expresses their trust in people on a level of “can’t be too careful. This rough overview already gives the impression, that the level of Social Capital is rather low in Romania.</p>
+The following graph provides an overview on how trust and happines in life, as well as trust and satisfaction are eventually linked.
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-18-1.png" width="100%" /></p>
+</div>
+<p>Looking at the graph, it is hard to establish a clear trend within the data. Starting with the “Happiness” part of the diagram, it can roughly be said, that those who are very or quite happy with their lives tend to trust their fellow citizens more on average.</p>
+<p>A similar trend cannot really be observed in the case for satisfaction. Here, dissatisfied participants seem to trust their fellow citizens more. While there are differences in the level of trust, it’s not possible to observe a trend.</p>
+<p>Furthermore it needs to be stated, that the overall level of trust rarely exceeds 20% with a maximum of 30% being reached only once.</p>
+<p>Besides the trust factor, analyzing “weak ties” can also help to get an impression of the Social Capital among the Romanian people. The term weak ties implies connections among individuals which one does not know very well, but by whom one is surrounded on a regular basis. In the EVS, the interviewers asked the participants weather they are a member of various groups. Let us therefor first have a very general overview of how the membership in any group can have on happiness and or life satisfaction.
+Note: for a better overview, the level of satisfaction has been grouped into 1: ‘Not satisfied at all’, 2-5: ‘Not very satisfied’, 6-9: ‘Quite satisfied’, 10: ‘Very satisfied’.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-19-1.png" width="100%" /></p>
+</div>
+<p>It can be seen, that on average members of any given organisation or institution are happier and more satisfied, than individuals who are not. This effect doesn’t seem to change when looking at general happiness or life satisfaction.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-20-1.png" width="100%" /></p>
+</div>
+<p>Starting off with charitable causes we can see that those who mentioned being a member of a charitable organisation reported to be quite happy or very happy more often.
+Being a member of a labor union also seems to have a certain connection to happiness as union members more often reported to be quite or very happy as opposed to non-members.</p>
+<p>Interestingly, being a member of a religious organisation doesn’t seem to increase happiness for all participants. It can be observed that those who are religious more often reported to be not very happy but at the same time religious respondents more often reported to be very happy. One way of interpreting this would be to assume that being religious could have a diverging effect on people and either increase or decrease their happiness according to some other external variable.</p>
+<p>Looking at the variable of being a member of a self-help group, the graphs don’t diverge as much as for other variables. Those who are members of a self-help group have a little more frequently reported to be quite happy than those who are not, but the effect is very small.</p>
+<p>Looking at sports groups, the effect on happiness seems to be surprisingly large. Those who reported to be members of sports groups are to a large extent either very happy or at least quite happy overall. Those two groups together constitute over 90% of those reporting to be member of a sports group or team.</p>
+<p>Finally, being a member of an activity. This seems to be connected to the effect of happiness as those who have reported to be member of any sort of activity rarely mentioned to be not very happy or not at all happy. Over 90% of respondents who mentioned to be member of an activity reported to be either very or at least quite happy.</p>
+<p>It can be assumed, that this effect is similar to the one observed for sports groups, as the graph for overall activities strongly mirrors the one for sports groups.</p>
+We assume that weak ties also appear in the neighborhood. Since neighbors are in some way silent, but steady companions, we find it highly important to look at what impact a certain neighborhood can have on the the trust the questioned people have in them.
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-21-1.png" width="100%" /></p>
+</div>
+<p>Starting off with drinking neighbors. To most people it doesn’t really seem to matter if their neighbors are drinkers or not. The two graphs barely differ from each other. There is a small group of respondents that responds with “trust somewhat” as opposed to “trust completely” if their neighbors are drinkers, but the effect is too small to be investigated further.</p>
+<p>Being a drug addict however, seems to have a more significant effect. The picture is similar to drinking, but a larger percentage of respondents reports to not trust their neighbors very much if they are drug addicts.</p>
+<p>The case for homosexuality however is an interesting one. There seems to be a rather large group of respondents that chooses not to trust their neighbors very much as opposed to trusting them somewhat, if they happen to be homosexuals. On the other hand, there is also a group of respondents which increase the trust in their neighbors from trusting them somewhat to trusting them completely.Having homosexual neighbors therefore seems to have a split effect on the Romanian citizens, depending on an external variable.</p>
+<p>Having immigrant neighbors seems to enhance the trust that Romanian citizens have in them. This seems to be a uniform effect for all citizens. There is a larger percentage of citizens reporting to trust their neighbors completely as well more citizens trusting them at least somewhat if they happen to be immigrants.</p>
+<p>Neighbors having a different race seems to polarize the Romanian people to a small but visible extent. There is a larger percentage of respondents reporting to trust their neighbors completely as well as a larger percentage of citizens not trusting their neighbors at all if they have a different race.</p>
+Furthermore, weak ties also appear within a religion. Individuals which share similar interests, such as the same god, implicitly see each other on a regular basis when attending a church service. The following two mosaic plots shall provide an overview on how the attendance of a church service might affect the level of SWB, as we assume, that weak ties have a positive effect on the Social capital and therefor on the level of SWB.
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-22-1.png" width="100%" /></p>
+</div>
+<p>There doesn’t seem to be a clear connection between church attendance and happiness in life or life satisfaction. The mosaic patterns don’t differ very much from each other, with one exception. It can be seen, that those who practically never attend church report to be not very happy a little more frequently than those who (for instance) attend church more than once a week. This effect however is not visible when switching to life satisfaction. Overall, the effect doesn’t seem to be strong enough to speculate a connection between church attendance and happiness or satisfaction.</p>
+<h1 id="principal-component-analysis">Principal Component Analysis</h1>
+<blockquote>
+<p>Try to find appropriate components for the political interest and attitude dimension, e.g. run a PCA using the variables “Interested in politics”, “Satisfaction with the political system”, “Having a democratic political system”, “Importance of democracy”, …</p>
+</blockquote>
+<h2 id="overview-of-variables">overview of variables</h2>
+<p>The key variable for our analysis is going to be the E023 - Interest in politics (interest_politics) variable. However, the survey offers more questions in regards to the attitude towards politics. In order to avoid misunderstanding, we want to give a quick overview of what the variables mean.</p>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 27%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>id</strong></th>
+<th><strong>variable</strong></th>
+<th><strong>explaination</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>E023</td>
+<td>intrests_politics</td>
+<td>How interested would you say you are in politics?</td>
+</tr>
+<tr class="even">
+<td>E025</td>
+<td>politics_petition</td>
+<td>Signing a petition</td>
+</tr>
+<tr class="odd">
+<td>E026</td>
+<td>politics_boycott</td>
+<td>Joining in boycotts</td>
+</tr>
+<tr class="even">
+<td>E027</td>
+<td>politics_demo</td>
+<td>Attending lawful demonstrations</td>
+</tr>
+<tr class="odd">
+<td>E028</td>
+<td>politics_strikes</td>
+<td>Joining unofficial strikes</td>
+</tr>
+<tr class="even">
+<td>E111_01</td>
+<td>politics_satisfaction</td>
+<td>Satisfaction with the political system</td>
+</tr>
+<tr class="odd">
+<td>E117</td>
+<td>politics_democracy</td>
+<td>Having a democratic political system</td>
+</tr>
+<tr class="even">
+<td>E235</td>
+<td>importance_democracy</td>
+<td>Importance of democracy</td>
+</tr>
+</tbody>
+</table>
+The variables in the following graph are going to be key elements in the following principal components analysis.
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-23-1.png" width="100%" /><img src="index_files/figure-html5/unnamed-chunk-23-2.png" width="100%" /></p>
+</div>
+<p>The graphs indicate a first rough overview of the political climate in Romania. For more than half of the people are not very interested to not at all interested in politics, which reflects in taking political actions. Only few people have signed a petition, joined a boycott, joined a lawful demonstration or even joined an unofficial strike. Nevertheless, a slight majority sees democracy as a very good idea, and highlight the importance of democracy.</p>
+<p>The following tables provide an overview of the exact scaling for the variables. We decided to scale the variables in a way, that a higher number indicates a more positive attitude/ a higher involvement towards the variable.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>$intrests_politics
+[1] &quot;[1] Not at all interested&quot; &quot;[2] Not very interested&quot;  
+[3] &quot;[3] Somewhat interested&quot;   &quot;[4] Very interested&quot;      
+
+$politics_petition
+[1] &quot;[1] Would never do&quot; &quot;[2] Might do&quot;       &quot;[3] Have done&quot;     
+
+$politics_boycott
+[1] &quot;[1] Would never do&quot; &quot;[2] Might do&quot;       &quot;[3] Have done&quot;     
+
+$politics_demo
+[1] &quot;[1] Would never do&quot; &quot;[2] Might do&quot;       &quot;[3] Have done&quot;     
+
+$politics_strikes
+[1] &quot;[1] Would never do&quot; &quot;[2] Might do&quot;       &quot;[3] Have done&quot;     
+
+$politics_satisfaction
+ [1] &quot;[1] Not satisfied at all&quot;  &quot;[2] 2&quot;                    
+ [3] &quot;[3] 3&quot;                     &quot;[4] 4&quot;                    
+ [5] &quot;[5] 5&quot;                     &quot;[6] 6&quot;                    
+ [7] &quot;[7] 7&quot;                     &quot;[8] 8&quot;                    
+ [9] &quot;[9] 9&quot;                     &quot;[10] Completely satisfied&quot;
+
+$politics_democracy
+[1] &quot;[1] Very bad&quot;    &quot;[2] Fairly bad&quot;  &quot;[3] Fairly good&quot;
+[4] &quot;[4] Very good&quot;  
+
+$importance_democracy
+ [1] &quot;[1] Not at all important&quot;  &quot;[2] 2&quot;                    
+ [3] &quot;[3] 3&quot;                     &quot;[4] 4&quot;                    
+ [5] &quot;[5] 5&quot;                     &quot;[6] 6&quot;                    
+ [7] &quot;[7] 7&quot;                     &quot;[8] 8&quot;                    
+ [9] &quot;[9] 9&quot;                     &quot;[10] Absolutely important&quot;</code></pre>
+</div>
+<h2 class="tabset" id="analysis">Analysis</h2>
+<p>In order to find groups in the data, we decided to plot the dimensions among each other. In the following section, one can see a Screeplot in 4.2.1, and the different scatterplots for the first two principal components. We neglect comparing the 4th and the 5th principal component, since we find the variance covered, to be too low.</p>
+<h3 id="screeplot">Screeplot</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-25-1.png" width="624" /></p>
+</div>
+<p>Looking at the principal components and their visualization within the screeplot it is tricky to clearly identify the number of PCs that should be considered. There is no clearly visible “elbow” which would identify the number of components that need to be considered to cover most of the variance. The first component makes up for around 32% of the explained variance. This is relatively low as compared to other datasets, but is not a matter of concern. It simply indicates that a large majority (100-32,4 = 67,6%) of observations are distributed over more than one dimension. We want to reduce the data’s dimensionality and at the same time reach above 60% of explained variance, hence we are left with 3 PC’s to reach a cumulative explained variance of 63.9%.</p>
+<h3 id="scatterplot-for-pc1">scatterplot for PC1</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-26-1.png" width="624" /></p>
+</div>
+<p>From comparing these graphs, we can see, that there is a clear group forming for the first two dimensions. However, a similar group forms for the first and the fourth dimension.</p>
+<h3 id="scatterplot-for-pc2">scatterplot for PC2</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-27-1.png" width="624" /></p>
+</div>
+<p>The second and the third dimension seem to characterize a group as well.</p>
+<hr />
+<h2 class="tabset" id="biplots">Biplots</h2>
+<p>In order to identify what characterizes the groups, we want to provide some Biplots, which seemed to give us some information about the groups we might find in the data, without neglecting the level of variance we cover with the analysis.</p>
+<p>When interpreting the biplots, one also need to take into account, how the data is scaled. For instances, the scaling of the data will be specifically noted. However, looking at the biplots between PC 1 and 2 as well as 1 and 4 a couple things become clear which are very interesting to note.</p>
+<h3 id="biplot-pc1pc2">Biplot PC1&amp;PC2</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-28-1.png" width="624" /></p>
+</div>
+<p>In the Biplot between the first and the second principal component, we can see that the importance of democracy is positively correlated to the attitude of having a democratic system. Importance_democracy measures the importance, that a given respondent attributes to the concept of democracy as a whole. This is measured on a scale from 1-10 with 10 attributing the highest level of importance to the concept of democracy. That being said, it makes sense, that a respondent who thinks highly of democracy would attribute a lot of importance to the concept of democracy while simultaneously being convinced that living in a democracy is an important thing.</p>
+<p>The remaining vectors rather form a nearly 90 degree angle towards the two mentioned vectors. Therefor it can be said, that the importance of democracy or the satisfaction with the democratic system is uncorrelated to whether somebody has attended a boycott, a strike, or a demonstration.</p>
+<p>The interests in politics seems to also play a role in the importance for democracy, since they are positively correlated (same counts fo the attitude towards a democratic system as a whole)</p>
+<p>Also higher interest in politics seems to lead to a higher satisfaction with the political system.</p>
+<h3 id="biplot-pc1pc4">Biplot PC1&amp;PC4</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-29-1.png" width="624" /></p>
+</div>
+<p>What sticks out in comparing the first and fourth principal component, is that a higher importance in democracy seems to be negatively correlated to the attendance of a strike. Even though this might seem to imply at first, that those who place higher value on democracy do not attend strikes very often, the opposite is actually the case. This is due to the scaling of the variable. A low numerical value in politics_strikes means that a given respondent has already participated in a strike. Therefore we can show, that those who place value on democracy can observed to go on strikes more often. This extends (to a certain extent) also to political boycotts.</p>
+<h2 id="correlation-matrix-and-pc-interpretation">Correlation Matrix and PC-interpretation</h2>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>Standard deviations (1, .., p=8):
+[1] 1.6100924 1.2108203 1.0296796 0.8652515 0.8606724 0.7859592
+[7] 0.6514150 0.5914269
+
+Rotation (n x k) = (8 x 8):
+                              PC1           PC2         PC3
+intrests_politics      0.24699809  0.3137522284 -0.51790649
+politics_petition      0.48009536 -0.0000543415  0.04911926
+politics_boycott       0.48107537 -0.1667161335 -0.06268166
+politics_demo          0.50827600  0.0194823163 -0.01000423
+politics_strikes       0.44043002 -0.1468228603  0.02363448
+politics_satisfaction -0.11340022  0.3180819879 -0.72309318
+politics_democracy     0.06522440  0.6082890101  0.35595539
+importance_democracy   0.08734956  0.6169579267  0.27423441
+                              PC4         PC5         PC6         PC7
+intrests_politics      0.63460849 -0.32039571  0.20726831 -0.09417242
+politics_petition      0.01850322  0.57486313 -0.05963922 -0.13225330
+politics_boycott      -0.21209055 -0.29897840  0.01366346  0.77205250
+politics_demo          0.14874147  0.38893224 -0.09148833 -0.04394590
+politics_strikes      -0.40386774 -0.49918826 -0.05303118 -0.60727989
+politics_satisfaction -0.52055150  0.19339433 -0.23039845  0.02019811
+politics_democracy     0.08597401 -0.19436860 -0.66774254  0.07479080
+importance_democracy  -0.29723513  0.04304842  0.66569539  0.02922038
+                               PC8
+intrests_politics     -0.122940663
+politics_petition     -0.644389618
+politics_boycott      -0.078873312
+politics_demo          0.746647305
+politics_strikes       0.002571468
+politics_satisfaction  0.035126104
+politics_democracy    -0.048801358
+importance_democracy   0.048191157</code></pre>
+</div>
+<h3 id="pc1">PC1</h3>
+<p>Principal Component 1 seems to be negatively correlated with the variable of satisfaction with politics. Furthermore, we see a positive correlation with interest in politics and all variables of unconventional political participation like petitions, boycotts, demonstrations or strikes. All in all, this paints a very cohesive picture of citizens which are very dissatisfied with the current political climate and therefore use methods of political participation to try and change the current system with which they are so dissatisfied.</p>
+<h3 id="pc2">PC2</h3>
+<p>In PC2 we see a positive correlation with interest in politics as well as satisfaction with the current political climate and a very strong correlation with the importance of democracy. This can be interpreted as the distinction between those citizens who are interested in the political process and satisfied with its current state and those who are not.</p>
+<h3 id="pc3">PC3</h3>
+<p>In PC3 we can see a negative correlation in interest in politics and politics democracy. Although there are no strong positive correlations, there is a medium sized positive correlation in importance of democracy and politics democracy. This can be interpreted as the group of citizens that are not interested in politics and also are not satisfied with the politics of their country, they do however put slight value on political democracy and importance of democracy.</p>
+<h3 id="pc4">PC4</h3>
+<p>In PC4 we can see a positive correlation with interest in politics. There also seems to be a negative correlation with political strikes and political satisfaction. This group of citizens has an interest in politics, but they do not participate in political strikes and they are not satisfied with their politics of their country.
+___</p>
+<h1 id="further-weak-ties">Further Weak Ties</h1>
+<blockquote>
+As Weak ties one can also take the variables “Number of active associational memberships”, “Number of inactive associational memberships”, “How important in your life: friends and acquaintances” that have to be computed by oneself. Investigate these variables and decide whether you are going to take them into your further analysis or not.
+The following plot shall give an overview of the distribution on how many people are acutally in a membership.
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-31-1.png" width="624" /></p>
+</blockquote>
+</div>
+<p>As one can see from the distribution of number of memberships, it does not make sense to keep the total number memberships as a variable, since the wide majority is not even in a single organization. Nevertheless, knowing this also helps for the further analysis. We can now add the variable “are you member in at least one organisation?”. Doing so includes the variable of activities that respondents may or may not be part of in a more reasonable way. Let us have a look an the distribution of the dummy variable then.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-32-1.png" width="624" /></p>
+</div>
+<p>Looking at the variable of activities as a binary “are you a member of any of these organisations” variable seems to make more sense since it splits the dataset into two comparable groups. Let us therefore consider, how this weak tie influences the happiness and the life satisfaction of the Romanians.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-33-1.png" width="624" /></p>
+</div>
+<p>The impact that being a member of any organisation has on life satisfaction or happiness of the Romanian population is pretty similar. For both cases we see a visible, but not overwhelming increase of respondents that report to be “very happy”. For all else, there doesn’t seem to be a large change in responses.</p>
+<p>This puts the decision to include the variable into perspective since the impact that it has on the responses seems to be rather limited. After consideration, it might be better to omit the variable of activity membership for the case of Romania since the influence seems to be rather limited.</p>
+<p>However, we followed an additional approach, which was categorizing the membership variables into active memberships, and rather inactive memberships. The following table provides an overview of our active organisations, where we assume people to have weak ties.</p>
+<table>
+<colgroup>
+<col style="width: 100%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>variables for active memberships</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Belong to religious organization (given a person attends church at least once a week)</td>
+</tr>
+<tr class="even">
+<td>Belong to edocation, arts, music or cultural activites</td>
+</tr>
+<tr class="odd">
+<td>Belong to venservation, the environment, ecology, animal rights</td>
+</tr>
+<tr class="even">
+<td>Belong to sports or recreation</td>
+</tr>
+<tr class="odd">
+<td>Belong to humanitarian or charitable organization</td>
+</tr>
+<tr class="even">
+<td>Belong to self-help group, mutual aid group</td>
+</tr>
+</tbody>
+</table>
+<p>This leaves us with 153 Romanians in the sample. The reason for this quite significant decrease in our dataset is that 59.25% of the Romanian population are not members in any kind of association. Let us nonetheless have a look at what this means on happiness and satisfaction.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-34-1.png" width="624" /></p>
+</div>
+<p>Here we can see a similar result to the previous plot, however, we believe, that the variable “are you an active member of an organisation” is much more reliable in regards to evaluating weak ties. However, even when only considering the memberships considered to be more active, the effect on happiness or satisfaction still remains marginal. As a consequence, we will omit the variable of membership in further analyses.</p>
+<p>The next variable we will have a look at is the importance of friends. This can be seen as another weak tie as those who value the friends they have made in a certain area can be expected to be better integrated in their social system and be overall more content with their living situation. Let’s start by looking at the overall distribution for the Romanian people:</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-35-1.png" width="624" /></p>
+</div>
+<p>The barplot shows, that most of the Romanian respondents seem to place at least a certain bit of importance on their friends. Most of the respondents stated that friends are “rather important” to them. Closely following up is the group for which friends are “very important”. Taking these groups together, we can estimate that around 82.22% of the Romanian respondents place at least a certain bit of value on their friends. This leads us to speculate that this variable might be relevant to include in further analysis. However, in order to be sure whether we should consider this variable further, let’s look at how the importance of friends impacts life satisfaction and overall happiness</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-36-1.png" width="624" /></p>
+</div>
+<p>Starting with the impact that the importance of friends has on happiness, we can see that the more important friends get, the larger are the percentages of respondents claiming to be quite or very happy. However, keeping the previous illustration in mind, we need to remember that the group sizes for friend importance were rather asymmetrical, with much more respondents stating that friends would be rather important. The overall theme however still seems to be that the more important friends are to a respondent, the more happy they appear to be. We can observe a similar effect when looking at life satisfaction. The effects previously mentioned can still be seen here, although slightly less pronounced. When comparing the groups it shows that those who consider their friends to be rather or very important also seem to respond being quite or very satisfied with their lives. And although the effects might not be as pronounced as we might have hoped, we still think it pays off to keep this variable in mind when proceeding in the analysis.</p>
+<h1 id="strong-ties">Strong Ties</h1>
+<blockquote>
+<p>Strong ties are another important dimension of Social Capital. Use as proxy variable “How important in your life: family”.
+The variable “Important in life: Family” indicates another strong tie. In order to get an overview of the variable, let us have a look at the distribution.</p>
+</blockquote>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-37-1.png" width="624" /></p>
+</div>
+<p>As we can see from the distribution, the vast majority of the people in Romania (91%) see their family as “very important”. This is for sure not a bad thing for the Romanian people, however it is not very helpful for our further analysis, since the distribution is very unequal. Due to the low power that any analysis with this variable would have, the importance of family as a proxy for strong ties will be omitted in further analyses because of its asymmetrical distribution.</p>
+<h1 id="freedom-and-control">Freedom and Control</h1>
+<blockquote>
+<p>As an additional important variable for life satisfaction please look at “How much freedom of choice and control”, i.e. A173. Do you find evidence for a strong association between life satisfaction or happiness and this variable?
+An additional variable, that can influence life satisfaction and happiness in life is “How much freedom of choice and control” somebody has. The authors of the study describe the question as follows: some people feel they have completely free choice and control over their lives, and other people feel that what they do has no real effect on what happens to them. Please use the scale to indicate how much freedom of choice and control you feel you have over the way your life turns out?</p>
+</blockquote>
+<p>In order to get a first overview, let us have a look at the distribution of the variable.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-38-1.png" width="624" /></p>
+</div>
+<p>From looking at the boxplot we can see, that the median of the distribuiton is at the level of 8. Most people (32%) see themself to be very free, by answering at the highest level possible. almost 50% of the distribution chose a level the level of 9. The additional 50% of the remaining answers are distibuted in a declining distibution from 8 to 1. The lower levels, especially 1 to 4) may not have a lot of observations, however we do have quiet some oversvations for the upper levels. We therefor decided to bundle the variable as the follows:</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>id</strong></th>
+<th><strong>variable</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1-4</td>
+<td>not much</td>
+</tr>
+<tr class="even">
+<td>5-7</td>
+<td>a little</td>
+</tr>
+<tr class="odd">
+<td>8-9</td>
+<td>rather agree</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>A great deal</td>
+</tr>
+</tbody>
+</table>
+<p>This leaves us with the following distribution:</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>    1) not much     2) a little 3) rather agree 4) a great deal 
+             44             163             167             183 </code></pre>
+<p><img src="index_files/figure-html5/unnamed-chunk-39-1.png" width="624" /></p>
+</div>
+<p>Looking at this distribution, we can observe that most of the respondents seem to feel at least a little in control of how their lives turn out. This is something we need to keep in mind when looking at the correlations between this feeling of control and our dependent variables.</p>
+<p>Let us now look if we can find some associations between life satisfaction or happiness in life together with the perceived control that citizens feel they have in their lives.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-40-1.png" width="624" /></p>
+</div>
+<p>From looking at the mosaic plot, showing the relation between perceived freedom and happiness, a trend that we can observe is that the more people feel in control of their lives, the happier they tend to be. As previously mentioned we need to keep in mind that for those who feel not so much in control of their lives (group 1) we have a rather small sample size. This could be the reason why the trend that we can observe in groups 2 and 3 is not so much reflected in group 1. Looking at group 4 in particular, the trend also seems to be interrupted. However we can observe a higher percentage of respondents who feel like they have a lot of influence on their lives who also claim to be very happy as compared to groups 2 or 3.</p>
+<p>Analyzing the right graph which compares satisfaction in life to freedom of choice and control, we notice a much clearer trend across the board. We could generally say that the more the Romanian people feel in control of their lives, the more satisfied they were. It needs to be noted, that especially in the group that feels not so much in control (group 1) we are working with a rather small sample size. However, this does not diminish the trend otherwise observed in the dataset and leads us to the conclusion that we will consider this variable further.</p>
+<h1 id="additional-variable-education">Additional Variable: Education</h1>
+<blockquote>
+<p>Pick one variable you think may be important and you are interested in. Argue for your chosen variable. Provide some descritptive statistics for it as well.
+Education can lay the foundation for all future life. It’s imporatance can not only dirctly affect the income when starting to work, but also the number of children, the age of the first birth of the child, and finally, we would like to find out, if we find evidence, for the level of education having influence on the happiness and life satisfaction. Let us therefor start with an overview on the variable and its distribution.</p>
+</blockquote>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-41-1.png" width="624" /></p>
+</div>
+<p>We can see, that almost half of the Romanians in our sample have a upper secondary degree. Which, according to our research is equivalent with a high school degree. In order to clearly identify groups, we would like to group the variable as follows:</p>
+<table>
+<thead>
+<tr class="header">
+<th><strong>level of education </strong></th>
+<th><strong>group</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Less than primary</td>
+<td>Less than High School</td>
+</tr>
+<tr class="even">
+<td>Primary</td>
+<td>Less than High School</td>
+</tr>
+<tr class="odd">
+<td>Lower secondary</td>
+<td>Less than High School</td>
+</tr>
+<tr class="even">
+<td>Upper secondary</td>
+<td>High School Education</td>
+</tr>
+<tr class="odd">
+<td>Post-secondary non tertiary</td>
+<td>High School Education</td>
+</tr>
+<tr class="even">
+<td>Short-cycle tertiary</td>
+<td>High School Education</td>
+</tr>
+<tr class="odd">
+<td>Bacheloror equivalent</td>
+<td>College Education</td>
+</tr>
+<tr class="even">
+<td>Master or equivalent</td>
+<td>College Education</td>
+</tr>
+</tbody>
+</table>
+<p>This leaves us with the following groups:</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-42-1.png" width="624" /></p>
+</div>
+<p>We shall now compare the impact of happiness and life satisfaction on the education variable.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-43-1.png" width="624" /></p>
+</div>
+<p>It seems like, the distribution among the very happy and very satisfied people is relativly constant across the three levels of education. However, we can find an incline in the not very satisfied/happy people towards a lower level of education.</p>
+<h1 id="relationship-between-satisfaction-and-other-variables">Relationship between Satisfaction and other Variables</h1>
+<h2 id="satisfaction-freedom">satisfaction ~ freedom</h2>
+<blockquote>
+<p>Quantify the relationship between “life satisfaction” and “control over life”, “health” and
+your variable of interest with an appropriate bivariate statistic measure and a corresponding
+test for statistical significance.
+With satisfaction and freedom, we have two qualitative variables. For simplicity and due to the lack of a larger dataset, we would like to stick with the groups which we have created in the previous sections of this report. Let’s have a look at the absolute frequencies in our data.</p>
+</blockquote>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>                 satisfaction_group
+freedom_group     Not satisfied at all Not very satisfied
+  1) not much                        0                 21
+  2) a little                        2                 46
+  3) rather agree                    0                 21
+  4) a great deal                    3                 14
+                 satisfaction_group
+freedom_group     Quiet satisfied Very satisfied
+  1) not much                  18              5
+  2) a little                 104             11
+  3) rather agree             123             23
+  4) a great deal              72             94</code></pre>
+</div>
+<p>In this table we can see, that the number of observations is indeed very small for the not satisfied at all group. Nevertheless, we can check, if there is a dependency of the level of freedom of choice and control on the satisfaction, meaning: Are people who believe their live to be free and who are believe to have more control in live, on average more satisfied in life?
+We are going to perform a chi-square test. Our hypothesis shall be:</p>
+<p>H0: The level of satisfaction does not depend on the amount of freedom of choice and control
+H1: The level of satisfaction does depend on the amount of freedom of choice and control somebody believe to have in life.</p>
+<p>We are going to test at a 5% level of significance.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  tab
+X-squared = 156.56, df = 9, p-value &lt; 2.2e-16</code></pre>
+</div>
+<p>With a p-value of very close to 0, and a rather large value for the Chi^2 test statistic, we can conclude, that there is a relationship between the two categorical variables.</p>
+<h2 id="satisfaction-health">satisfaction ~ health</h2>
+<p>With the health variable, we have a variable which is, just like the freedom variable qualitative and we are therefor going to perform a chi-square test, with first looking at the absolute distribution.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>      satisfaction_group
+health Not satisfied at all Not very satisfied Quiet satisfied
+     1                    0                  6               3
+     2                    1                 25              11
+     3                    3                 39              75
+     4                    1                 25             165
+     5                    0                  7              63
+      satisfaction_group
+health Very satisfied
+     1              0
+     2              3
+     3             39
+     4             54
+     5             37</code></pre>
+</div>
+<p>Our null-/ and alternative hypothesis shall be:</p>
+<p>H0: The status of health has no effect on the level of satisfaction
+H1: The status of health indeed has an effect on the level of satisfaction</p>
+<p>and we are going to test at a 5% level of significance.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  tab
+X-squared = 105.57, df = 12, p-value &lt; 2.2e-16</code></pre>
+</div>
+<p>We again retrieve a p-value very close to zero and a rather large test statistic. This leads us to the conclusion, that we can reject the null-hypothesis and assume, that the status of health as an impact on the level of satisfaction.</p>
+<h2 id="satisfaction-educ">satisfaction ~ educ</h2>
+<p>As an additional variable, we chose education. Hereby, we also decided to group education into three categories:</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] &quot;High School Education&quot; &quot;College Education&quot;    </code></pre>
+</div>
+<p>Let us have a look at the distribution of the qualitative dependent variable education and the qualitative explanatory variable life satisfaction.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>                       satisfaction_group
+educ_group              Not satisfied at all Not very satisfied
+  College Education                        0                  8
+  High School Education                    5                 94
+                       satisfaction_group
+educ_group              Quiet satisfied Very satisfied
+  College Education                  77             20
+  High School Education             240            113</code></pre>
+</div>
+<p>In a next step, we shall find out, if the level of education has an effect on the satisfaction in life. We are going to perform a chi-square test. Testing at a 5% level of significance, our null -&amp; alternative hypothesis are going to be:</p>
+<p>H0: The level of education has no effect on the satisfaction in life.
+H1: The level of education indeed has an effect on the satisfaction in life.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>
+    Pearson&#39;s Chi-squared test
+
+data:  tab
+X-squared = 16.636, df = 3, p-value = 0.0008395</code></pre>
+</div>
+<p>With a p-value close to zero, we can reject the null hypothesis. This allows us to conclude, that the level of education has an impact on the life satisfaction. However, we would like to note, that this only implies a correlation. We believe, that the actual causation is biased through other factors. Since usually a higher level of education also implies a higher level of income. Money may not make somebody happier, however a sufficient income can guarantee a decent standard of living and therefor increase satisfaction in life. In order to test this hypothesis, we would have to run a multiple linear regression.</p>
+<h2 id="simple-linear-regression-model">Simple linear regression model</h2>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>
+Call:
+lm(formula = romania$satisfaction ~ romania$freedom + romania$health_fac + 
+    romania$educ_fac)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.2520 -0.9936  0.1482  1.2781  5.0254 
+
+Coefficients:
+                                            Estimate Std. Error
+(Intercept)                                  4.12779    0.87434
+romania$freedom                              0.36416    0.03595
+romania$health_facPoor                      -0.58181    0.67699
+romania$health_facFair                       1.31999    0.65186
+romania$health_facGood                       1.78994    0.65677
+romania$health_facVery good                  2.25238    0.67240
+romania$educ_facPrimary                     -1.43842    0.80692
+romania$educ_facLower secondary             -1.23754    0.78781
+romania$educ_facUpper secondary             -0.83734    0.78804
+romania$educ_facPost-secondary non tertiary -1.67895    0.85655
+romania$educ_facShort-cycle tertiary         0.38985    1.28666
+romania$educ_facBachelor or equivalent      -0.75225    0.81478
+romania$educ_facMaster or equivalent        -1.11277    0.83239
+                                            t value Pr(&gt;|t|)    
+(Intercept)                                   4.721 2.99e-06 ***
+romania$freedom                              10.131  &lt; 2e-16 ***
+romania$health_facPoor                       -0.859 0.390497    
+romania$health_facFair                        2.025 0.043359 *  
+romania$health_facGood                        2.725 0.006629 ** 
+romania$health_facVery good                   3.350 0.000865 ***
+romania$educ_facPrimary                      -1.783 0.075210 .  
+romania$educ_facLower secondary              -1.571 0.116795    
+romania$educ_facUpper secondary              -1.063 0.288451    
+romania$educ_facPost-secondary non tertiary  -1.960 0.050491 .  
+romania$educ_facShort-cycle tertiary          0.303 0.762010    
+romania$educ_facBachelor or equivalent       -0.923 0.356283    
+romania$educ_facMaster or equivalent         -1.337 0.181836    
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+Residual standard error: 1.788 on 544 degrees of freedom
+Multiple R-squared:  0.3168,    Adjusted R-squared:  0.3017 
+F-statistic: 21.02 on 12 and 544 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+<p>From this analysis we can see that indeed the impact that education has on life satisfaction is at least moderated by other variables. By including our variables of interest in a regression model, we can see that the impact of education on life satisfaction does diminish when health and freedom are included. In this model, the influence of education is not only small but also statistically not significant. Freedom and health however do not only have positive but significant influences on life satisfaction.</p>
+<p>The variables, were treated as metric variables for the sake of this regression. Especially in the case of education this works because the coding of the variable implies a higher numerical value for higher degrees of education. For health a higher numerical value (and thus a positive slope in the regression model) equals a better health condition. And the impact we observe for freedom implies that the more important personal freedom of choice and control is to a person, the higher their satisfaction will be.</p>
+<h1 id="investigating-life-satisfaction-and-gender">Investigating Life Satisfaction and Gender</h1>
+<blockquote>
+<p>Choose an appropriate statistical test and investigate whether “life satisfaction” differ with
+respect to “gender”.
+In the following, we shall find out, if the life satisfaction of the participants differs significantly across the two genders. Let us first have a look at a summary table in order to get a clearer</p>
+</blockquote>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>         Male Female
+n      255.00 302.00
+mean     7.49   7.56
+median   8.00   8.00
+sd       2.14   2.14
+iqr      3.00   3.00
+min      1.00   1.00
+max     10.00  10.00</code></pre>
+</div>
+<p>We can see, that there are 255 male and 302 female participants in the sample. While to outlier robust median is identical for both groups, they seem to differ in the means. The standard deviation, the minimum &amp; maximum value, as well as the interquartile range seem to be identical. Let us now visualize the two groups in a boxplot, including the mean as a red dot.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="index_files/figure-html5/unnamed-chunk-53-1.png" width="624" /></p>
+</div>
+<p>The boxplots together with the distribution may explain the differentiating means. Within the male subset, there are more people rating their level of satisfaction on a 5 or a 4, than the female population does.</p>
+<p>With the help of a Wilcoxon-Mann test, we shall find out, whether the mean satisfaction of the two genders differs significantly. Our null hypothesis and the alternative hypothesis shall be the following:</p>
+<p>H0: The mean of the male and female population does not differ
+H1: The mean of the male and female population differs</p>
+<p>We are going to test at a 5% level of significance.</p>
+<p>We chose a Wilcoxon Test since it is a great tool to assess the differences in a variable of interest for two distinct groups.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>
+    Asymptotic Wilcoxon-Mann-Whitney Test
+
+data:  satisfaction by sex_fac (Male, Female)
+Z = -0.39152, p-value = 0.6954
+alternative hypothesis: true mu is not equal to 0</code></pre>
+</div>
+<p>The output leaves us with a p-value of 0.6954. This implies, that we cannot reject the Null hypothesis and assume, that the means among the male and female population does not differ significantly.</p>
+<p>Because a likert scale can also be interpreted as a metric variable, we also included a T test in order to confirm the interpretations previously made.</p>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>
+    Welch Two Sample t-test
+
+data:  romania$satisfaction by romania$sex_fac
+t = -0.34139, df = 539.97, p-value = 0.7329
+alternative hypothesis: true difference in means between group Male and group Female is not equal to 0
+95 percent confidence interval:
+ -0.4199236  0.2955761
+sample estimates:
+  mean in group Male mean in group Female 
+            7.494118             7.556291 </code></pre>
+</div>
+<p>The Analysis shows a similar finding. With a p-value of 0.7329 we cannot reject the H0 either and can thus conclude that the means between the two gender groups do not differ significantly.</p>
+<h1 id="linear-regression-models-and-conclusion">Linear regression models and Conclusion</h1>
+<blockquote>
+<p>Let’s analyze now the association of life satisfaction with variables known from the literature
+to be important. Run an OLS regression (lm()) with life satisfaction as dependent variable.
+As independent variables use age (please include a quadratic relationship in age, i.e. age +
+I(age2)), gender, employment status, marital status, education, health, and income as well
+as your social capital components and the variable of interest you chose. Do not forget to
+define factors appropriately in order to include them also appropriately in the model.
+For your interpretations use bivariate plots and analyses as well as the findings of the multiple
+regression analysis. Try to summarize your most important results.</p>
+</blockquote>
+<p>In the following code we will merge our PC1, PC2 and PC3 into our romania DF so that we can add the political landscape into our linear regression. Variables for the 3 PC’s are named as followed: pc1_politics_involvement, pc2_politics_satisfaction and pc3_politics_notsatisfied.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h2 id="building-the-primary-model">Building the primary model</h2>
+<p>In a first step we built a primary model with all the variables that we have deemed important in our analysis so far.
+The variables are: age, age squared, gender, health, employment, marital status, education, income, trust, importance of family, membership association, freedom, pc1, pc2 and pc3.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h2 id="calculating-the-optimal-model">Calculating the optimal model</h2>
+<p>For the optimal model we will run our primary model through the step command and through forward selection get the optimal model.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>
+Regression results optimal model
+===============================================================
+                                        Dependent variable:    
+                                    ---------------------------
+                                           satisfaction        
+---------------------------------------------------------------
+age                                           -0.009           
+                                              (0.006)          
+                                                               
+health_facPoor                                -0.269           
+                                              (0.658)          
+                                                               
+health_facFair                                1.543**          
+                                              (0.617)          
+                                                               
+health_facGood                               1.943***          
+                                              (0.620)          
+                                                               
+health_facVery good                          2.372***          
+                                              (0.647)          
+                                                               
+marst_facLiving together as married           -0.237           
+                                              (0.686)          
+                                                               
+marst_facDivorced                            -1.098***         
+                                              (0.368)          
+                                                               
+marst_facSeparated                            -1.058           
+                                              (0.735)          
+                                                               
+marst_facWidowed                              -0.424*          
+                                              (0.249)          
+                                                               
+marst_facSingle/Never married                 -0.133           
+                                              (0.231)          
+                                                               
+member_any_facyes                              0.223           
+                                              (0.156)          
+                                                               
+freedom_group2) a little                       0.252           
+                                              (0.306)          
+                                                               
+freedom_group3) rather agree                 1.035***          
+                                              (0.310)          
+                                                               
+freedom_group4) a great deal                 2.092***          
+                                              (0.307)          
+                                                               
+pc2_politics_satisfaction                     0.109*           
+                                              (0.064)          
+                                                               
+Constant                                     5.231***          
+                                              (0.739)          
+                                                               
+---------------------------------------------------------------
+Observations                                    557            
+R2                                             0.334           
+Adjusted R2                                    0.316           
+Residual Std. Error                      1.770 (df = 541)      
+F Statistic                          18.112*** (df = 15; 541)  
+===============================================================
+Note:                               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
+</div>
+<p>The stepwise regression brings forward the optimal model with age, health, marital status, membership association, freedom and pc2 political satisfaction as variables. This model has an R-squared of 0.334 which means it explains around 33% of the variation in satisfaction in our data.</p>
+<p>First variable which was statistical significance on a 95% CI is health beeing fair. With health beeing rated as fair, the satisfaction improved by 1,54 points in respect to health beeing very poor with all other variables beeing equal. Health beeing rated as beeing good or very good was statistically significant on an CI of 99% and did improve the satisfaction by 1,94 or 2,37 respectively, in respect to rating the health as beeing very poor, of course ceteris paribus.</p>
+<p>Beeing divorced was also statistically significant on a CI of 99% and did reduce satisfaction by 1,1 compared to people beeing married, all other factors beeing equal. Also statistically significant but only on an CI of 90% was beeing widowed, which reduced satisfaction by 0,42 compared to beeing married, all else beeing equal.</p>
+<p>With people feeling rather free and a great deal of freedom the statistical significance with a CI of 99% did improve satisfaction by 1,04 and 2,1 respectively, in comparison with people feeling not free at all, all esle beeing equal.</p>
+<p>Political satisfaction, our variable from the principal component analysis was statistically significant on an CI of 90% and did improve satisfaction by 0,109 * 2 (an resonable value of the principal component values) , which would only amount to an increase of 0,2 in satisfaction, ceteris paribus.</p>
+<p>Rather surprising for us was that membership association did not improve satisfaction, as it is well documented in the literature. Also surprising for us was that income, importance of family and education where redundant in the optimal model and therfore left out.</p>
+<p>However, what we can conclude with confidence is that for the Romanian population, their most important determinants of their satisfaction are their health and the sense of freedom as well as the feeling of choice and control that they have over their lives.</p>
+<h2 id="side-by-side-comparison-of-primary-model-and-opimal-model">Side-by-side comparison of primary model and opimal model</h2>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>
+Regression results primary model vs optimal model
+====================================================================================================
+                                                                  Dependent variable:               
+                                                    ------------------------------------------------
+                                                                      satisfaction                  
+                                                         primary model           optimal model      
+                                                              (1)                     (2)           
+----------------------------------------------------------------------------------------------------
+age                                                          0.001                   -0.009         
+                                                            (0.036)                 (0.006)         
+                                                                                                    
+I(age2)                                                     -0.0001                                 
+                                                           (0.0004)                                 
+                                                                                                    
+sex_facFemale                                                0.074                                  
+                                                            (0.169)                                 
+                                                                                                    
+health_facPoor                                              -0.330                   -0.269         
+                                                            (0.674)                 (0.658)         
+                                                                                                    
+health_facFair                                              1.516**                 1.543**         
+                                                            (0.637)                 (0.617)         
+                                                                                                    
+health_facGood                                             1.865***                 1.943***        
+                                                            (0.642)                 (0.620)         
+                                                                                                    
+health_facVery good                                        2.345***                 2.372***        
+                                                            (0.669)                 (0.647)         
+                                                                                                    
+employment_facPart time (less then 30 hours a week)         -0.044                                  
+                                                            (0.515)                                 
+                                                                                                    
+employment_facSelf employed                                  0.067                                  
+                                                            (0.371)                                 
+                                                                                                    
+employment_facRetired/pensioned                              0.008                                  
+                                                            (0.278)                                 
+                                                                                                    
+employment_facHousewife (not otherwise employed)            -0.208                                  
+                                                            (0.265)                                 
+                                                                                                    
+employment_facStudent                                        0.300                                  
+                                                            (0.498)                                 
+                                                                                                    
+employment_facUnemployed                                    -0.525                                  
+                                                            (0.587)                                 
+                                                                                                    
+employment_facOther                                          1.229                                  
+                                                            (1.851)                                 
+                                                                                                    
+marst_facLiving together as married                         -0.149                   -0.237         
+                                                            (0.711)                 (0.686)         
+                                                                                                    
+marst_facDivorced                                          -0.991**                -1.098***        
+                                                            (0.387)                 (0.368)         
+                                                                                                    
+marst_facSeparated                                          -0.855                   -1.058         
+                                                            (0.790)                 (0.735)         
+                                                                                                    
+marst_facWidowed                                            -0.378                  -0.424*         
+                                                            (0.277)                 (0.249)         
+                                                                                                    
+marst_facSingle/Never married                               -0.055                   -0.133         
+                                                            (0.275)                 (0.231)         
+                                                                                                    
+educ                                                        0.0003                                  
+                                                            (0.057)                                 
+                                                                                                    
+income_scale_facB - 2nd decile                              -0.040                                  
+                                                            (0.370)                                 
+                                                                                                    
+income_scale_facC - 3rd decile                              -0.052                                  
+                                                            (0.347)                                 
+                                                                                                    
+income_scale_facD - 4th decile                               0.307                                  
+                                                            (0.362)                                 
+                                                                                                    
+income_scale_facE - 5th decile                               0.044                                  
+                                                            (0.385)                                 
+                                                                                                    
+income_scale_facF - 6th decile                               0.291                                  
+                                                            (0.435)                                 
+                                                                                                    
+income_scale_facG - 7th decile                               0.019                                  
+                                                            (0.613)                                 
+                                                                                                    
+income_scale_facH - 8th decile                               0.334                                  
+                                                            (0.728)                                 
+                                                                                                    
+income_scale_facI - 9th decile                               0.525                                  
+                                                            (0.679)                                 
+                                                                                                    
+income_scale_facJ - 10th decile                              0.099                                  
+                                                            (0.727)                                 
+                                                                                                    
+trust_facCan´t be too careful                                0.204                                  
+                                                            (0.222)                                 
+                                                                                                    
+imp_fam_facNot very important                                0.373                                  
+                                                            (1.530)                                 
+                                                                                                    
+imp_fam_facRather important                                 -0.177                                  
+                                                            (1.366)                                 
+                                                                                                    
+imp_fam_facVery important                                    0.154                                  
+                                                            (1.337)                                 
+                                                                                                    
+member_any_facyes                                            0.194                   0.223          
+                                                            (0.167)                 (0.156)         
+                                                                                                    
+freedom_group2) a little                                     0.230                   0.252          
+                                                            (0.315)                 (0.306)         
+                                                                                                    
+freedom_group3) rather agree                               1.005***                 1.035***        
+                                                            (0.322)                 (0.310)         
+                                                                                                    
+freedom_group4) a great deal                               2.114***                 2.092***        
+                                                            (0.317)                 (0.307)         
+                                                                                                    
+pc1_politics_involvement                                    -0.048                                  
+                                                            (0.049)                                 
+                                                                                                    
+pc2_politics_satisfaction                                   0.120*                   0.109*         
+                                                            (0.067)                 (0.064)         
+                                                                                                    
+pc3_politics_notsatisfied                                   -0.092                                  
+                                                            (0.081)                                 
+                                                                                                    
+Constant                                                    4.574**                 5.231***        
+                                                            (1.830)                 (0.739)         
+                                                                                                    
+----------------------------------------------------------------------------------------------------
+Observations                                                  557                     557           
+R2                                                           0.348                   0.334          
+Adjusted R2                                                  0.298                   0.316          
+Residual Std. Error                                    1.793 (df = 516)         1.770 (df = 541)    
+F Statistic                                         6.897*** (df = 40; 516) 18.112*** (df = 15; 541)
+====================================================================================================
+Note:                                               *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01                     </code></pre>
+</div>
+<p>Comparing the primary model and the optimal model side by side we can see that the R squared was slightly higher in the primary model wic explained 34,8% instead of the 33,4% of explained variantion in the satisfaction. the residual standard errors where also similar with the optimal model beeing a bit lower, therefore more precise. The most important differences where the variables beeing divorced and beeing widowed did become more statistically significant with the optimal model. The rest of the variables did differ a bit on the amount of improvement/decrease in satisfaction, but remaind almost the same.</p>
+<h1 id="acknowledgements">Acknowledgements</h1>
+<p>We would like to acknowledge Prof. Walde’s and of course also Prof. Zeileis’s efforts and thank for all the hints, tipps and tricks we learned in this Data Analytics course. Lastly a quote:</p>
+<p>“If we have data, let’s look at data. If all we have are opinions, let’s go with mine.” - Jim Barksdale.</p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
