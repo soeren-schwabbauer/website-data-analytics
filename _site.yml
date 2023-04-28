@@ -2,7 +2,7 @@ name: "DATA ANALYTICS"
 title: "DATA ANALYTICS"
 description: |
   DATA ANALYTICS
-output_dir: "_docs"
+output_dir: "docs"
 navbar:
   right:
     - text: "Home"
