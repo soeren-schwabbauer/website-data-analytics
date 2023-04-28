@@ -2133,13 +2133,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </div>
 <h1 id="download-data">Download data</h1>
-<blockquote>
 <p>Download the data for the country you choose. You also find the official variable description file in the corresponding folder.
-Done.
-___
-# First overview of data
-Get acquainted with the data (rename and/or recode variables). The main variables with which we are going to work are measures of subjective well-being (SWB), namely general happiness and life satisfaction. Are these two variables comparable measures of SWB? How do these variables correlate with personal characteristics like income, health, age, marital status, etc.? Find suitable ways to show some possible (not necessarily causal) relationships.</p>
-</blockquote>
+Done.</p>
+<h1 id="first-overview-of-data">First overview of data</h1>
+<p>Get acquainted with the data (rename and/or recode variables). The main variables with which we are going to work are measures of subjective well-being (SWB), namely general happiness and life satisfaction. Are these two variables comparable measures of SWB? How do these variables correlate with personal characteristics like income, health, age, marital status, etc.? Find suitable ways to show some possible (not necessarily causal) relationships.</p>
 <h2 id="a170-satisfaction-in-life">A170 satisfaction in life</h2>
 <div class="layout-chunk" data-layout="l-body">
 <pre><code>   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
@@ -2197,7 +2194,7 @@ The following mosaic plots shall provide an overview of the two main variables a
   19.00   34.00   50.00   49.54   65.00   82.00 </code></pre>
 </div>
 <p>The summary command tells us the mean and the median age. Bothe are around 50. With the mean and the median age laying close together, one can say, that the distribution is rater equal. Since the age scaling end at the age of 82, one can not say, how old the oldest person in the dataframe is. The youngest however is at the age of 19.</p>
-In order to get a brief overview of the age distribution, a population pyramid can help.
+<p>In order to get a brief overview of the age distribution, a population pyramid can help.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="index_files/figure-html5/unnamed-chunk-11-1.png" width="100%" /></p>
 </div>
@@ -2211,7 +2208,7 @@ In order to get a brief overview of the age distribution, a population pyramid c
 <p><img src="index_files/figure-html5/unnamed-chunk-13-1.png" width="100%" /></p>
 </div>
 <p>Since it is not possible, to put the marital status in some kind of hierarchy, it can be considered a nominal scaled variable. The graph shows the distribution of people regarding their legal marital status. It can be seen, that the wide majority (60%) is married. The second and third highest population is formed by people who are single or have never been married (19%), and people who are widowed (15%).</p>
-The following mosaic plots are an attempt of a causal link between the marriage status, happiness and life satisfaction
+<p>The following mosaic plots are an attempt of a causal link between the marriage status, happiness and life satisfaction</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="index_files/figure-html5/unnamed-chunk-14-1.png" width="100%" /></p>
 </div>
@@ -2230,7 +2227,6 @@ The following mosaic plots are an attempt of a causal link between the marriage 
 <p>Looking at the variable of being a member of a self-help group, the graphs don’t diverge as much as for other variables. Those who are members of a self-help group have a little more frequently reported to be quite happy than those who are not, but the effect is very small.</p>
 <p>Finally, being a member of an activity. This seems to be connected to the effect of happiness as those who have reported to be member of any sort of activity rarely mentioned to be not very happy or not at all happy. Over 90% of respondents who mentioned to be member of an activity reported to be either very or at least quite happy.</p>
 <h1 id="social-capital">Social Capital</h1>
-<blockquote>
 <p>The literature shows that Social Capital is an important factor for increasing the level of SWB. For the trust dimension of social capital you may use the variable asking whether people can generally be trusted or not, for the weak ties dimension you could use the sum of the variables asking whether one is a member of …
 For the following section, we shall have a look at how the subjective well-being (SWB), namely general happiness and life satisfaction, are linked to Social Capital
 In order to take a closer look at the SWB, we shall take the term of the Social Capital into account. The literature shows that Social Capital is an important factor for increasing the level of SWB. But first of all, what is Social Capital?
@@ -2238,13 +2234,12 @@ Social capital can be seen as “a positive product of human interaction” (inv
 Despite its undeniable value for any group of individuals, there is no consensus on how social capital can be measured directly. This leads to the conclusion, that social capital can only be expressed through other indicators. The European Value Study (EVS) includes several indicators which can help to determine a countries Social Capital.
 In the following, we are going to consider trust as a key dimension for social capital. The EVS sees the trust variable as an indication whether most people can be trusted or not. in particular, the people participating in the survey get asked the following question: Generally speaking, would you say that most people can be trusted or that you can’t be too careful in dealing with people?
 The answer is then separated into two possible answers (1) “Most people can be trusted” and (2) “Can’t be too careful”. In the following diagram, we are going to provide an overview of the responses of the qualitative variable.</p>
-</blockquote>
-The following table depicts the distribution of the two levels of trust in Romania
+<p>The following table depicts the distribution of the two levels of trust in Romania</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="index_files/figure-html5/unnamed-chunk-17-1.png" width="100%" /></p>
 </div>
 <p>As we can see from the pie chart and the table, people in Romania are generally rather careful. The vast majority (approx. 85%) expresses their trust in people on a level of “can’t be too careful. This rough overview already gives the impression, that the level of Social Capital is rather low in Romania.</p>
-The following graph provides an overview on how trust and happines in life, as well as trust and satisfaction are eventually linked.
+<p>The following graph provides an overview on how trust and happines in life, as well as trust and satisfaction are eventually linked.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="index_files/figure-html5/unnamed-chunk-18-1.png" width="100%" /></p>
 </div>
@@ -2267,7 +2262,7 @@ Being a member of a labor union also seems to have a certain connection to happi
 <p>Looking at sports groups, the effect on happiness seems to be surprisingly large. Those who reported to be members of sports groups are to a large extent either very happy or at least quite happy overall. Those two groups together constitute over 90% of those reporting to be member of a sports group or team.</p>
 <p>Finally, being a member of an activity. This seems to be connected to the effect of happiness as those who have reported to be member of any sort of activity rarely mentioned to be not very happy or not at all happy. Over 90% of respondents who mentioned to be member of an activity reported to be either very or at least quite happy.</p>
 <p>It can be assumed, that this effect is similar to the one observed for sports groups, as the graph for overall activities strongly mirrors the one for sports groups.</p>
-We assume that weak ties also appear in the neighborhood. Since neighbors are in some way silent, but steady companions, we find it highly important to look at what impact a certain neighborhood can have on the the trust the questioned people have in them.
+<p>We assume that weak ties also appear in the neighborhood. Since neighbors are in some way silent, but steady companions, we find it highly important to look at what impact a certain neighborhood can have on the the trust the questioned people have in them.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="index_files/figure-html5/unnamed-chunk-21-1.png" width="100%" /></p>
 </div>
@@ -2276,15 +2271,13 @@ We assume that weak ties also appear in the neighborhood. Since neighbors are in
 <p>The case for homosexuality however is an interesting one. There seems to be a rather large group of respondents that chooses not to trust their neighbors very much as opposed to trusting them somewhat, if they happen to be homosexuals. On the other hand, there is also a group of respondents which increase the trust in their neighbors from trusting them somewhat to trusting them completely.Having homosexual neighbors therefore seems to have a split effect on the Romanian citizens, depending on an external variable.</p>
 <p>Having immigrant neighbors seems to enhance the trust that Romanian citizens have in them. This seems to be a uniform effect for all citizens. There is a larger percentage of citizens reporting to trust their neighbors completely as well more citizens trusting them at least somewhat if they happen to be immigrants.</p>
 <p>Neighbors having a different race seems to polarize the Romanian people to a small but visible extent. There is a larger percentage of respondents reporting to trust their neighbors completely as well as a larger percentage of citizens not trusting their neighbors at all if they have a different race.</p>
-Furthermore, weak ties also appear within a religion. Individuals which share similar interests, such as the same god, implicitly see each other on a regular basis when attending a church service. The following two mosaic plots shall provide an overview on how the attendance of a church service might affect the level of SWB, as we assume, that weak ties have a positive effect on the Social capital and therefor on the level of SWB.
+<p>Furthermore, weak ties also appear within a religion. Individuals which share similar interests, such as the same god, implicitly see each other on a regular basis when attending a church service. The following two mosaic plots shall provide an overview on how the attendance of a church service might affect the level of SWB, as we assume, that weak ties have a positive effect on the Social capital and therefor on the level of SWB.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="index_files/figure-html5/unnamed-chunk-22-1.png" width="100%" /></p>
 </div>
 <p>There doesn’t seem to be a clear connection between church attendance and happiness in life or life satisfaction. The mosaic patterns don’t differ very much from each other, with one exception. It can be seen, that those who practically never attend church report to be not very happy a little more frequently than those who (for instance) attend church more than once a week. This effect however is not visible when switching to life satisfaction. Overall, the effect doesn’t seem to be strong enough to speculate a connection between church attendance and happiness or satisfaction.</p>
 <h1 id="principal-component-analysis">Principal Component Analysis</h1>
-<blockquote>
 <p>Try to find appropriate components for the political interest and attitude dimension, e.g. run a PCA using the variables “Interested in politics”, “Satisfaction with the political system”, “Having a democratic political system”, “Importance of democracy”, …</p>
-</blockquote>
 <h2 id="overview-of-variables">overview of variables</h2>
 <p>The key variable for our analysis is going to be the E023 - Interest in politics (interest_politics) variable. However, the survey offers more questions in regards to the attitude towards politics. In order to avoid misunderstanding, we want to give a quick overview of what the variables mean.</p>
 <table>
@@ -2343,7 +2336,7 @@ Furthermore, weak ties also appear within a religion. Individuals which share si
 </tr>
 </tbody>
 </table>
-The variables in the following graph are going to be key elements in the following principal components analysis.
+<p>The variables in the following graph are going to be key elements in the following principal components analysis.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="index_files/figure-html5/unnamed-chunk-23-1.png" width="100%" /><img src="index_files/figure-html5/unnamed-chunk-23-2.png" width="100%" /></p>
 </div>
@@ -2401,7 +2394,6 @@ $importance_democracy
 <p><img src="index_files/figure-html5/unnamed-chunk-27-1.png" width="624" /></p>
 </div>
 <p>The second and the third dimension seem to characterize a group as well.</p>
-<hr />
 <h2 class="tabset" id="biplots">Biplots</h2>
 <p>In order to identify what characterizes the groups, we want to provide some Biplots, which seemed to give us some information about the groups we might find in the data, without neglecting the level of variance we cover with the analysis.</p>
 <p>When interpreting the biplots, one also need to take into account, how the data is scaled. For instances, the scaling of the data will be specifically noted. However, looking at the biplots between PC 1 and 2 as well as 1 and 4 a couple things become clear which are very interesting to note.</p>
@@ -2463,12 +2455,10 @@ importance_democracy   0.048191157</code></pre>
 <p>In PC4 we can see a positive correlation with interest in politics. There also seems to be a negative correlation with political strikes and political satisfaction. This group of citizens has an interest in politics, but they do not participate in political strikes and they are not satisfied with their politics of their country.
 ___</p>
 <h1 id="further-weak-ties">Further Weak Ties</h1>
-<blockquote>
-As Weak ties one can also take the variables “Number of active associational memberships”, “Number of inactive associational memberships”, “How important in your life: friends and acquaintances” that have to be computed by oneself. Investigate these variables and decide whether you are going to take them into your further analysis or not.
-The following plot shall give an overview of the distribution on how many people are acutally in a membership.
+<p>As Weak ties one can also take the variables “Number of active associational memberships”, “Number of inactive associational memberships”, “How important in your life: friends and acquaintances” that have to be computed by oneself. Investigate these variables and decide whether you are going to take them into your further analysis or not.
+The following plot shall give an overview of the distribution on how many people are acutally in a membership.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="index_files/figure-html5/unnamed-chunk-31-1.png" width="624" /></p>
-</blockquote>
 </div>
 <p>As one can see from the distribution of number of memberships, it does not make sense to keep the total number memberships as a variable, since the wide majority is not even in a single organization. Nevertheless, knowing this also helps for the further analysis. We can now add the variable “are you member in at least one organisation?”. Doing so includes the variable of activities that respondents may or may not be part of in a more reasonable way. Let us have a look an the distribution of the dummy variable then.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -2526,19 +2516,15 @@ The following plot shall give an overview of the distribution on how many people
 </div>
 <p>Starting with the impact that the importance of friends has on happiness, we can see that the more important friends get, the larger are the percentages of respondents claiming to be quite or very happy. However, keeping the previous illustration in mind, we need to remember that the group sizes for friend importance were rather asymmetrical, with much more respondents stating that friends would be rather important. The overall theme however still seems to be that the more important friends are to a respondent, the more happy they appear to be. We can observe a similar effect when looking at life satisfaction. The effects previously mentioned can still be seen here, although slightly less pronounced. When comparing the groups it shows that those who consider their friends to be rather or very important also seem to respond being quite or very satisfied with their lives. And although the effects might not be as pronounced as we might have hoped, we still think it pays off to keep this variable in mind when proceeding in the analysis.</p>
 <h1 id="strong-ties">Strong Ties</h1>
-<blockquote>
 <p>Strong ties are another important dimension of Social Capital. Use as proxy variable “How important in your life: family”.
 The variable “Important in life: Family” indicates another strong tie. In order to get an overview of the variable, let us have a look at the distribution.</p>
-</blockquote>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="index_files/figure-html5/unnamed-chunk-37-1.png" width="624" /></p>
 </div>
 <p>As we can see from the distribution, the vast majority of the people in Romania (91%) see their family as “very important”. This is for sure not a bad thing for the Romanian people, however it is not very helpful for our further analysis, since the distribution is very unequal. Due to the low power that any analysis with this variable would have, the importance of family as a proxy for strong ties will be omitted in further analyses because of its asymmetrical distribution.</p>
 <h1 id="freedom-and-control">Freedom and Control</h1>
-<blockquote>
 <p>As an additional important variable for life satisfaction please look at “How much freedom of choice and control”, i.e. A173. Do you find evidence for a strong association between life satisfaction or happiness and this variable?
 An additional variable, that can influence life satisfaction and happiness in life is “How much freedom of choice and control” somebody has. The authors of the study describe the question as follows: some people feel they have completely free choice and control over their lives, and other people feel that what they do has no real effect on what happens to them. Please use the scale to indicate how much freedom of choice and control you feel you have over the way your life turns out?</p>
-</blockquote>
 <p>In order to get a first overview, let us have a look at the distribution of the variable.</p>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="index_files/figure-html5/unnamed-chunk-38-1.png" width="624" /></p>
@@ -2584,10 +2570,8 @@ An additional variable, that can influence life satisfaction and happiness in li
 <p>From looking at the mosaic plot, showing the relation between perceived freedom and happiness, a trend that we can observe is that the more people feel in control of their lives, the happier they tend to be. As previously mentioned we need to keep in mind that for those who feel not so much in control of their lives (group 1) we have a rather small sample size. This could be the reason why the trend that we can observe in groups 2 and 3 is not so much reflected in group 1. Looking at group 4 in particular, the trend also seems to be interrupted. However we can observe a higher percentage of respondents who feel like they have a lot of influence on their lives who also claim to be very happy as compared to groups 2 or 3.</p>
 <p>Analyzing the right graph which compares satisfaction in life to freedom of choice and control, we notice a much clearer trend across the board. We could generally say that the more the Romanian people feel in control of their lives, the more satisfied they were. It needs to be noted, that especially in the group that feels not so much in control (group 1) we are working with a rather small sample size. However, this does not diminish the trend otherwise observed in the dataset and leads us to the conclusion that we will consider this variable further.</p>
 <h1 id="additional-variable-education">Additional Variable: Education</h1>
-<blockquote>
 <p>Pick one variable you think may be important and you are interested in. Argue for your chosen variable. Provide some descritptive statistics for it as well.
 Education can lay the foundation for all future life. It’s imporatance can not only dirctly affect the income when starting to work, but also the number of children, the age of the first birth of the child, and finally, we would like to find out, if we find evidence, for the level of education having influence on the happiness and life satisfaction. Let us therefor start with an overview on the variable and its distribution.</p>
-</blockquote>
 <div class="layout-chunk" data-layout="l-body">
 <p><img src="index_files/figure-html5/unnamed-chunk-41-1.png" width="624" /></p>
 </div>
@@ -2645,12 +2629,10 @@ Education can lay the foundation for all future life. It’s imporatance can not
 <p>It seems like, the distribution among the very happy and very satisfied people is relativly constant across the three levels of education. However, we can find an incline in the not very satisfied/happy people towards a lower level of education.</p>
 <h1 id="relationship-between-satisfaction-and-other-variables">Relationship between Satisfaction and other Variables</h1>
 <h2 id="satisfaction-freedom">satisfaction ~ freedom</h2>
-<blockquote>
 <p>Quantify the relationship between “life satisfaction” and “control over life”, “health” and
 your variable of interest with an appropriate bivariate statistic measure and a corresponding
 test for statistical significance.
 With satisfaction and freedom, we have two qualitative variables. For simplicity and due to the lack of a larger dataset, we would like to stick with the groups which we have created in the previous sections of this report. Let’s have a look at the absolute frequencies in our data.</p>
-</blockquote>
 <div class="layout-chunk" data-layout="l-body">
 <pre><code>                 satisfaction_group
 freedom_group     Not satisfied at all Not very satisfied
@@ -2785,11 +2767,9 @@ F-statistic: 21.02 on 12 and 544 DF,  p-value: &lt; 2.2e-16</code></pre>
 <p>From this analysis we can see that indeed the impact that education has on life satisfaction is at least moderated by other variables. By including our variables of interest in a regression model, we can see that the impact of education on life satisfaction does diminish when health and freedom are included. In this model, the influence of education is not only small but also statistically not significant. Freedom and health however do not only have positive but significant influences on life satisfaction.</p>
 <p>The variables, were treated as metric variables for the sake of this regression. Especially in the case of education this works because the coding of the variable implies a higher numerical value for higher degrees of education. For health a higher numerical value (and thus a positive slope in the regression model) equals a better health condition. And the impact we observe for freedom implies that the more important personal freedom of choice and control is to a person, the higher their satisfaction will be.</p>
 <h1 id="investigating-life-satisfaction-and-gender">Investigating Life Satisfaction and Gender</h1>
-<blockquote>
 <p>Choose an appropriate statistical test and investigate whether “life satisfaction” differ with
 respect to “gender”.
 In the following, we shall find out, if the life satisfaction of the participants differs significantly across the two genders. Let us first have a look at a summary table in order to get a clearer</p>
-</blockquote>
 <div class="layout-chunk" data-layout="l-body">
 <pre><code>         Male Female
 n      255.00 302.00
@@ -2835,7 +2815,6 @@ sample estimates:
 </div>
 <p>The Analysis shows a similar finding. With a p-value of 0.7329 we cannot reject the H0 either and can thus conclude that the means between the two gender groups do not differ significantly.</p>
 <h1 id="linear-regression-models-and-conclusion">Linear regression models and Conclusion</h1>
-<blockquote>
 <p>Let’s analyze now the association of life satisfaction with variables known from the literature
 to be important. Run an OLS regression (lm()) with life satisfaction as dependent variable.
 As independent variables use age (please include a quadratic relationship in age, i.e. age +
@@ -2844,7 +2823,6 @@ as your social capital components and the variable of interest you chose. Do not
 define factors appropriately in order to include them also appropriately in the model.
 For your interpretations use bivariate plots and analyses as well as the findings of the multiple
 regression analysis. Try to summarize your most important results.</p>
-</blockquote>
 <p>In the following code we will merge our PC1, PC2 and PC3 into our romania DF so that we can add the political landscape into our linear regression. Variables for the 3 PC’s are named as followed: pc1_politics_involvement, pc2_politics_satisfaction and pc3_politics_notsatisfied.</p>
 <div class="layout-chunk" data-layout="l-body">
 

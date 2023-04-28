@@ -196,9 +196,9 @@ theme_cat <-   theme(
 ```
 
 # Download data
->  Download the data for the country you choose. You also find the official variable description file in the corresponding folder.
+  Download the data for the country you choose. You also find the official variable description file in the corresponding folder.
 Done.
-___
+
 # First overview of data
 Get acquainted with the data (rename and/or recode variables). The main variables with which we are going to work are measures of subjective well-being (SWB), namely general happiness and life satisfaction. Are these two variables comparable measures of SWB? How do these variables correlate with personal characteristics like income, health, age, marital status, etc.? Find suitable ways to show some possible (not necessarily causal) relationships.
 
@@ -308,9 +308,11 @@ These mosaic plots show a connection between health of an individual and the sat
 ```{r , echo=FALSE, out.width="100%"}
 summary(romania$age)
 ```
+
 The summary command tells us the mean and the median age. Bothe are around 50. With the mean and the median age laying close together, one can say, that  the distribution is rater equal. Since the age scaling end at the age of 82, one can not say, how old the oldest person in the dataframe is. The youngest however is at the age of 19.
 
 In order to get a brief overview of the age distribution, a population pyramid can help.
+
 ```{r , echo=FALSE, out.width="100%"}
 romania %>% 
   group_by(age, sex_fac) %>%
@@ -333,6 +335,7 @@ romania %>%
                                       colour = "grey") 
   )
 ```
+
 The visualisation of age distribution separated by sex supports the insight, that there is no significant difference or trend in age distribution.
 
 ```{r , echo=FALSE, out.width="100%"}
@@ -344,6 +347,7 @@ boxplot_satisfaction <- boxplot_age(satisfaction_fac, age, 0) +
   theme(legend.position = "none")
 grid.arrange(boxplot_happy, boxplot_satisfaction, nrow = 1)
 ```
+
 The boxplots show the distribution of age within the different levels of happiness and satisfaction. On the left graph it can be seen, that the median age increases, the less satisfied a person is. In the left graph it can be seen, that people who are "not happy at all" tend to be much older by median, than people who are very happy. For a less biased picture, we decided to split the level of happiness into male and female. It can be seen, that this does not make so big of a difference. However, a switch in the median age is observable, the less happy a person gets. The right boxplot shows that people with a satisfaction-level of 1 and 2 are almost solely over the age of 50. We can also note, that with satisfaction-levels of 3 and 4, the age is also quite high except for the lower 25 percentile in age and the lower outliers. Quite striking are the variances in the satisfaction-levels from 5 to 10, which span the whole age spectrum, although in general we can say that the higher the satisfaction-level the lower the median age
 
 ### Marital status
@@ -351,9 +355,11 @@ The boxplots show the distribution of age within the different levels of happine
 barplot_var(marst_fac) +
   labs(title = "Marriage distribution")
 ```
+
 Since it is not possible, to put the marital status in some kind of hierarchy, it can be considered a nominal scaled variable. The graph shows the distribution of people regarding their legal marital status. It can be seen, that the wide majority (60%) is married. The second and third highest population is formed by people who are single or have never been married (19%), and people who are widowed (15%).
 
 The following mosaic plots are an attempt of a causal link between the marriage status, happiness and life satisfaction 
+
 ```{r , echo=FALSE, out.width="100%"}
 romania %>%
   ggplot() +
@@ -363,6 +369,7 @@ romania %>%
        fill = "Scale of satisfaction") +
   mosaic_theme
 ```
+
 It can be seen, that the widowed people are generally the ones who are rather not, or not happy at all. The single and married people are generally the biggest peopulation of people who are "very happy". 
 
 ```{r , echo=FALSE, out.width="100%"}
@@ -374,10 +381,12 @@ romania %>%
        fill = "Scale of satisfaction") +
   mosaic_theme
 ```
+
 The distribution of "very satisfied" people is quiet similar to the one seen in the previous plot. The same counts for the "not very" or "not satisfied at all", with widowed people making up the largest population.
 
 
 ### Additional variables
+
 ```{r , echo = FALSE, out.width="100%"}
 activity_fun <- function(var, var_char){
   romania %>% select(happy, {{var}}) %>% rename(member = {{var}}) %>% mutate(cat = {{var_char}})
@@ -414,6 +423,7 @@ bind_rows( activity_fun(member_activity, "an activity"),
   
   facet_grid( ~ cat) 
 ```
+
 These additional variables also allow a little bit of insight into the data. Starting off with charitable causes we can see that those who mentioned being a member of a charitable organisation reported to be quite happy or very happy more often. 
 
 Being a member of a labor union also seems to have a certain connection to happiness as union members more often reported to be quite or very happy as opposed to non-members. 
@@ -426,7 +436,8 @@ Finally, being a member of an activity. This seems to be connected to the effect
 
 
 # Social Capital
-> The literature shows that Social Capital is an important factor for increasing the level of SWB. For the trust dimension of social capital you may use the variable asking whether people can generally be trusted or not, for the weak ties dimension you could use the sum of the variables asking whether one is a member of ...
+
+The literature shows that Social Capital is an important factor for increasing the level of SWB. For the trust dimension of social capital you may use the variable asking whether people can generally be trusted or not, for the weak ties dimension you could use the sum of the variables asking whether one is a member of ...
 For the following section, we shall have a look at how the subjective well-being (SWB), namely general happiness and life satisfaction, are linked to Social Capital
 In order to take a closer look at the SWB, we shall take the term of the Social Capital into account. The literature shows that Social Capital is an important factor for increasing the level of SWB. But first of all, what is Social Capital?
 Social capital can be seen as "a positive product of human interaction" (investopedia.com). While it can not be owned by somebody, it is the result of connections between individuals within social networks. Social capital can be seen as a base pillar for the effective functioning of social groups. The absence of Social capital can mislead a group of people to not achieve a common goal or purpose. 
@@ -435,6 +446,7 @@ In the following, we are going to consider trust as a key dimension for social c
 The answer is then separated into two possible answers (1) "Most people can be trusted" and (2) "Can't be too careful". In the following diagram, we are going to provide an overview of the responses of the qualitative variable.
 
 The following table depicts the distribution of the two levels of trust in Romania
+
 ```{r , echo = FALSE, out.width="100%"}
 trust_summary <- romania %>%
   
@@ -443,9 +455,11 @@ trust_summary <- romania %>%
   mutate(prop = round(n/sum(n)*100,2))
 grid.arrange(tableGrob(trust_summary),  heights = c(1))
 ```
+
 As we can see from the pie chart and the table, people in Romania are generally rather careful. The vast majority (approx. 85%) expresses their trust in people on a level of "can't be too careful. This rough overview already gives the impression, that the level of Social Capital is rather low in Romania.
 
 The following graph provides an overview on how trust and happines in life, as well as trust and satisfaction are eventually linked.
+
 ```{r , echo = FALSE, out.width="100%"}
 bind_rows(trust_var_summary(happy_fac, "Happiness"),
           trust_var_summary(satisfaction_fac, "Satisfaction")) %>%
@@ -522,6 +536,7 @@ bind_rows( fun_happy(happy, member_activity, "an activity"),
   
   theme_cat
 ```
+
 Starting off with charitable causes we can see that those who mentioned being a member of a charitable organisation reported to be quite happy or very happy more often.
 Being a member of a labor union also seems to have a certain connection to happiness as union members more often reported to be quite or very happy as opposed to non-members.
 
@@ -536,6 +551,7 @@ Finally, being a member of an activity. This seems to be connected to the effect
 It can be assumed, that this effect is similar to the one observed for sports groups, as the graph for overall activities strongly mirrors the one for sports groups.
 
 We assume that weak ties also appear in the neighborhood. Since neighbors are in some way silent, but steady companions, we find it highly important to look at what impact a  certain neighborhood can have on the the trust the questioned people have in them.
+
 ```{r , echo = FALSE, out.width="100%"}
 bind_rows( fun_happy(trust_neighbor, neighbours_diffrace, "have a different race"),
            fun_happy(trust_neighbor, neighbours_drinkers, "are drinkers"),
@@ -560,6 +576,7 @@ bind_rows( fun_happy(trust_neighbor, neighbours_diffrace, "have a different race
   
   theme_cat
 ```
+
 Starting off with drinking neighbors. To most people it doesn't really seem to matter if their neighbors are drinkers or not. The two graphs barely differ from each other. There is a small group of respondents that responds with "trust somewhat" as opposed to "trust completely" if their neighbors are drinkers, but the effect is too small to be investigated further.
  
 Being a drug addict however, seems to have a more significant effect. The picture is similar to drinking, but a larger percentage of respondents reports to not trust their neighbors very much if they are drug addicts.
@@ -571,6 +588,7 @@ Having immigrant neighbors seems to enhance the trust that Romanian citizens hav
 Neighbors having a different race seems to polarize the Romanian people to a small but visible extent. There is a larger percentage of respondents reporting to trust their neighbors completely as well as a larger percentage of citizens not trusting their neighbors at all if they have a different race.
 
 Furthermore, weak ties also appear within a religion. Individuals which share similar interests, such as the same god, implicitly see each other on a regular basis when attending a church service. The following two mosaic plots shall provide an overview on how the attendance of a church service might affect the level of SWB, as we assume, that weak ties have a positive effect on the Social capital and therefor on the level of SWB.
+
 ```{r , echo = FALSE, out.width="100%"}
 service_happy <-  romania %>%
   ggplot() +
@@ -594,7 +612,7 @@ There doesn't seem to be a clear connection between church attendance and happin
 
 
 # Principal Component Analysis
-> Try to find appropriate components for the political interest and attitude dimension, e.g. run a PCA using the variables “Interested in politics”, “Satisfaction with the political system”, “Having a democratic political system”, “Importance of democracy”, ...
+ Try to find appropriate components for the political interest and attitude dimension, e.g. run a PCA using the variables “Interested in politics”, “Satisfaction with the political system”, “Having a democratic political system”, “Importance of democracy”, ...
 
 ## overview of variables
 The key variable for our analysis is going to be the E023 - Interest in politics (interest_politics) variable. However, the survey offers more questions in regards to the attitude towards politics. In order to avoid misunderstanding, we want to give a quick overview of what the variables mean. 
@@ -611,6 +629,7 @@ The key variable for our analysis is going to be the E023 - Interest in politics
   | E235    | importance_democracy  | Importance of democracy                           |
   
 The variables in the following graph are going to be key elements in the following principal components analysis.
+
 ```{r , echo = FALSE, out.width="100%"}
 politics_variables <- romania %>% 
   select(intrests_politics, politics_petition, 
@@ -709,8 +728,6 @@ The second and the third dimension seem to characterize a group as well.
 
 
 
-___
-
 
 ## Biplots {.tabset}
 
@@ -720,6 +737,7 @@ When interpreting the biplots, one also need to take into account, how the data 
 
 
 ### Biplot PC1&PC2
+
 ```{r, echo=FALSE}
 fviz_pca_biplot(pc.politics, axes = c(1,2), label = "var", repel = TRUE)
 ```
@@ -735,6 +753,7 @@ Also higher interest in politics seems to lead to a higher satisfaction with the
 
 
 ### Biplot PC1&PC4
+
 ```{r, echo=FALSE}
 fviz_pca_biplot(pc.politics, axes = c(1,4), label = "var", repel = TRUE)
 ``` 
@@ -742,6 +761,7 @@ fviz_pca_biplot(pc.politics, axes = c(1,4), label = "var", repel = TRUE)
 What sticks out in comparing the first and fourth principal component, is that a higher importance in democracy seems to be negatively correlated to the attendance of a strike. Even though this might seem to imply at first, that those who place higher value on democracy do not attend strikes very often, the opposite is actually the case. This is due to the scaling of the variable. A low numerical value in politics_strikes means that a given respondent has already participated in a strike. Therefore we can show, that those who place value on democracy can observed to go on strikes more often. This extends (to a certain extent) also to political boycotts.
 
 ## Correlation Matrix and PC-interpretation
+
 ```{r, echo=FALSE}
 pc.politics
 ```
@@ -761,8 +781,9 @@ ___
 
 
 # Further Weak Ties
-> As Weak ties one can also take the variables “Number of active associational memberships”, “Number of inactive associational memberships”, “How important in your life: friends and acquaintances” that have to be computed by oneself. Investigate these variables and decide whether you are going to take them into your further analysis or not.
+As Weak ties one can also take the variables “Number of active associational memberships”, “Number of inactive associational memberships”, “How important in your life: friends and acquaintances” that have to be computed by oneself. Investigate these variables and decide whether you are going to take them into your further analysis or not.
 The following plot shall give an overview of the distribution on how many people are acutally in a membership.
+
 ```{r, echo=FALSE}
 barplot_var(member_tot_fac) +
   labs(title ="Number of associations one is a member ") 
@@ -870,7 +891,7 @@ Starting with the impact that the importance of friends has on happiness, we can
 
 
 # Strong Ties
-> Strong ties are another important dimension of Social Capital. Use as proxy variable “How important in your life: family”.
+Strong ties are another important dimension of Social Capital. Use as proxy variable “How important in your life: family”.
 The variable "Important in life: Family" indicates another strong tie. In order to get an overview of the variable, let us have a look at the distribution. 
 
 ```{r, echo=FALSE}
@@ -881,7 +902,7 @@ barplot_var(imp_fam_fac) +
 As we can see from the distribution, the vast majority of the  people in Romania (91%) see their family as "very important". This is for sure not a bad thing for the Romanian people, however it is not very helpful for our further analysis, since the distribution is very unequal. Due to the low power that any analysis with this variable would have, the importance of family as a proxy for strong ties will be omitted in further analyses because of its asymmetrical distribution.
 
 # Freedom and Control
->  As an additional important variable for life satisfaction please look at “How much freedom of choice and control”, i.e. A173. Do you find evidence for a strong association between life satisfaction or happiness and this variable?
+As an additional important variable for life satisfaction please look at “How much freedom of choice and control”, i.e. A173. Do you find evidence for a strong association between life satisfaction or happiness and this variable?
 An additional variable, that can influence life satisfaction and happiness in life is "How much freedom of choice and control" somebody has. The authors of the study describe the question as follows: some people feel they have completely free choice and control over their lives, and other people feel that what they do has no real effect on what happens to them. Please use the scale to indicate how much freedom of choice and control you feel you have over the way your life turns out?
 
 In order to get a first overview, let us have a look at the distribution of the variable.
@@ -938,7 +959,7 @@ From looking at the mosaic plot, showing the relation between perceived freedom 
 Analyzing the right graph which compares satisfaction in life to freedom of choice and control, we notice a much clearer trend across the board. We could generally say that the more the Romanian people feel in control of their lives, the more satisfied they were. It needs to be noted, that especially in the group that feels not so much in control (group 1) we are working with a rather small sample size. However, this does not diminish the trend otherwise observed in the dataset and leads us to the conclusion that we will consider this variable further.
 
 # Additional Variable: Education
-> Pick one variable you think may be important and you are interested in. Argue for your chosen variable. Provide some descritptive statistics for it as well.
+Pick one variable you think may be important and you are interested in. Argue for your chosen variable. Provide some descritptive statistics for it as well.
 Education can lay the foundation for all future life. It's imporatance can not only dirctly affect the income when starting to work, but also the number of children, the age of the first birth of the child, and finally, we would like to find out, if we find evidence, for the level of education having influence on the happiness and life satisfaction. Let us therefor start with an overview on the variable and its distribution. 
 
 
@@ -992,7 +1013,7 @@ It seems like, the distribution among the very happy and very satisfied people i
 
 # Relationship between Satisfaction and other Variables
 ## satisfaction ~ freedom
-> Quantify the relationship between “life satisfaction” and “control over life”, “health” and
+Quantify the relationship between “life satisfaction” and “control over life”, “health” and
 your variable of interest with an appropriate bivariate statistic measure and a corresponding
 test for statistical significance.
 With satisfaction and freedom, we have two qualitative variables. For simplicity and due to the lack of a larger dataset, we would like to stick with the groups which we have created in the previous sections of this report. Let's have a look at the absolute frequencies in our data. 
@@ -1080,7 +1101,7 @@ The variables, were treated as metric variables for the sake of this regression.
 
 
 # Investigating Life Satisfaction and Gender
-> Choose an appropriate statistical test and investigate whether “life satisfaction” differ with
+Choose an appropriate statistical test and investigate whether “life satisfaction” differ with
 respect to “gender”. 
 In the following, we shall find out, if the life satisfaction of the participants differs significantly across the two genders. Let us first have a look at a summary table in order to get a clearer 
 
@@ -1144,7 +1165,7 @@ t.test(romania$satisfaction ~ romania$sex_fac)
 The Analysis shows a similar finding. With a p-value of 0.7329 we cannot reject the H0 either and can thus conclude that the means between the two gender groups do not differ significantly.
 
 # Linear regression models and Conclusion
-> Let’s analyze now the association of life satisfaction with variables known from the literature
+Let’s analyze now the association of life satisfaction with variables known from the literature
 to be important. Run an OLS regression (lm()) with life satisfaction as dependent variable.
 As independent variables use age (please include a quadratic relationship in age, i.e. age +
 I(age2)), gender, employment status, marital status, education, health, and income as well
